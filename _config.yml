@@ -1,0 +1,7 @@
+markdown: rdiscount
+permalink: /:title.html
+url: http://www.ixxoo.me
+author: likebeta
+pygments: true
+safe: true
+auto: true

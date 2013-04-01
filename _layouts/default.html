@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="author" content="{{ site.author }}" />
+    <title>{{ page.title }} | {{ site.author }}</title>
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link href="{{ site.url }}/feed.xml" rel="alternate" title="{{ site.author }}" type="application/atom+xml" />
+    <link rel="stylesheet" href="{{ site.url }}/media/css/style.css">
+    <link rel="stylesheet" href="{{ site.url }}/media/css/highlight.css">
+    <script type="text/javascript" src="{{ site.url }}/media/js/jquery-1.7.1.min.js"></script>
+  </head>
+  <body>
+    <div id="container">
+      <div id="main" role="main">
+        <header>
+        <h1>{{ page.title }}</h1>
+        </header>
+        <nav>
+			<span><a title="home page" href="{{ site.url }}/home.html">home</a></span>
+			<span><a title="about me" href="{{ site.url }}/about.html">about</a></span>
+			<span><a title="guestbook" href="{{ site.url }}/guestbook.html">guestbook</a></span>
+			<span><a title="categories" href="{{ site.url }}/categories.html">categories</a></span>
+			<span><a title="tags" href="{{ site.url }}/tags.html">tags</a></span>
+			<span><a title="links" href="{{ site.url }}/links.html">links</a></span>
+			<span><a title="subscribe by RSS" href="{{ site.url }}/feed.xml" target="_blank">subscribe</a></span>
+        </nav>
+        <article class="content">
+        {{ content }}
+        </article>
+      </div>
+    </div>
+  </body>
+</html>
