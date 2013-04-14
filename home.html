@@ -1,0 +1,22 @@
+---
+layout: index
+---
+
+{% for post in site.posts limit:20 %}
+<article class="post">
+ <div class="date">
+  <span class="day">{{ post.date | date:"%d" }}</span>
+  <span class="month">{{ post.date | date:"%b" }}</span>
+  <span class="year">{{ post.date | date:"%Y" }}</span>
+ </div>
+ <header>
+  <h2><a href="{{ site.url }}/{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h2>
+ </header>
+ <div class="con">
+   <p>
+   {{ post.content  | | split:'<!--more-->' | first | strip_html }}
+   <a class="more" href="{{site.url}}/{{post.url}}">[继续阅读]</a>
+   </p>
+ </div>
+</article>
+{% endfor %}

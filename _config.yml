@@ -1,7 +1,29 @@
 markdown: rdiscount
-permalink: /:title.html
-url: http://www.ixxoo.me
-author: likebeta
+permalink: :title.html
+url: http://ixxoo.github.io/www.ixxoo.me
+lsi: true
 pygments: true
 safe: true
 auto: true
+
+# presonal config
+title: likebeta's Blog
+feed: feed.xml
+rss: rss.xml
+blog: home.html
+comments: disqus
+
+author:
+  name: likebeta
+  nickname: likebeta
+  email: huangdi915103@gmail.com
+  qmail: http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=GnZzcX94f257WmtrNHl1dw
+  site: http://www.ixxoo.me
+
+seo: 
+  keyword: 
+  description: 
+config:
+  js_dir:
+  img_dir:
+  css_dir:

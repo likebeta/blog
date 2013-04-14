@@ -6,7 +6,7 @@ site:http://pagecho.com
 css-flie-last-update:2012.5.19
 */
 ::-webkit-scrollbar-track-piece{
-	background-color:#fff;
+	background-color:#EEE;
 	-webkit-border-radius:0;
 }
 ::-webkit-scrollbar{
@@ -17,9 +17,9 @@ css-flie-last-update:2012.5.19
 	height:50px;
 	background-color:#DDD;
 	-webkit-border-radius:4px;
-	outline:2px solid #fff;
+	outline:2px solid #EEE;
 	outline-offset:-2px;
-	border: 2px solid #fff;
+	border: 2px solid #EEE;
 }
 ::-webkit-scrollbar-thumb:hover{
 	height:50px;
@@ -66,7 +66,7 @@ margin:0;
 }
 
 body,.hover {
-background:white;
+background:#eeeeee;
 }
 #menu ul .current a {
 color:#40aa52;
@@ -170,7 +170,6 @@ float:left;
 #header #blog_title h1 a{
 font-size:52px;
 color:#40aa52;
-background:white;
 height:55px;
 overflow:hidden;
 display:block;
@@ -224,7 +223,7 @@ color:black;
 }
 
 .menu-rss {
-background:url(./rss.png) no-repeat right 2px;
+background:url(rss.png) no-repeat right 2px;
 }
 .head-search {
 
@@ -495,7 +494,7 @@ right:335px;
 text-align:justify;
 text-justify:inter-ideograph;
 padding:8px 0;
-text-indent:2em;
+/*text-indent:2em;*/
 }
 .post .con div p {
 text-align:justify;
