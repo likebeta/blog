@@ -1,6 +1,6 @@
 markdown: rdiscount
 permalink: :title.html
-url: http://ixxoo.github.io/www.ixxoo.me
+url: http://www.ixxoo.me
 lsi: true
 pygments: true
 safe: true
