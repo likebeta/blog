@@ -8,8 +8,8 @@ auto: true
 
 # presonal config
 title: likebeta's Blog
-feed: feed.xml
-rss: rss.xml
+feed: feed
+rss: rss
 blog: home.html
 comments: disqus
 
