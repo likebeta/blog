@@ -1,0 +1,27 @@
+---
+title: 归档
+layout: page
+---
+
+<article class="fir">
+	<div id="archives">
+	{% for post in site.posts %}
+		{% capture y %}{{post.date | date:"%Y"}}{% endcapture %}
+		{% if year != y %}
+			{% assign year = y %}
+			{% if forloop.first %}
+			{% else %}
+		</ul>
+			{% endif %}
+		<h4 class="al_year">{{ y }}</h4><ul class="al_year_list">
+		{% endif %}
+		<li>
+			<time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
+			<a href="{{ site.url }}/{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+		</li>
+		{% if forloop.next %}
+		</ul>
+		{% endif %}
+	{% endfor %}
+	</div>
+</article>

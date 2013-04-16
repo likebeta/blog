@@ -1273,3 +1273,8 @@ padding-left:15px;
 .mod_lost_child {
 	width: auto;
 }
+
+.al_year_list a {
+color: #40aa52;
+padding-left: 1em;
+}
