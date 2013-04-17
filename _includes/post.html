@@ -13,12 +13,12 @@
 				{% if page.previous %}
 				<div><strong>上一篇： <a href="{{ page.previous.url }}" title="{{ page.previous.title }}">{{ page.previous.title }}</a></strong></div>
 				{% else %}
-				<div><strong>上一篇： 这个真没有！！！</strong></div>
+				<div><strong>下一篇： 这个真没有！！！</strong></div>
 				{% endif %}
 				{% if page.next %}
 				<div><strong>上一篇： <a href="{{ page.next.url }}" title="{{ page.next.title }}">{{ page.next.title }}</a></strong></div>
 				{% else %}
-				<div><strong>上一篇： 这个真没有！！！</strong></div>
+				<div><strong>下一篇： 这个真没有！！！</strong></div>
 				{% endif %}
 			 </div>
 			 <div class="postunder"><div id="comments">{% include comments.html %}</div></div>
