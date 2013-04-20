@@ -1,0 +1,26 @@
+---
+title: categories
+layout: page
+---
+
+<article class="fir">
+	<div id="archives">
+	{% for categorie in site.categories %}
+		<h4 id="{{ categorie[0] }}">{{ categorie[0] }}</h4>
+		<ul>
+			{% for post in categorie[1] %}
+			<li>
+				<time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
+				<a href="{{ site.url }}/{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+			</li>
+			{% endfor %}
+		</ul>
+	{% endfor %}
+	</div>
+</article>
+<aside class="sec">
+<h4>categories</h4>
+{% for categorie in site.categories %}
+	<a href="#{{ categorie[0] }}" title="{{ categorie[0] }}" rel="{{ categorie[1].size }}">{{ categorie[0] }}</a>
+{% endfor %}
+</aside>
