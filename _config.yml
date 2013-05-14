@@ -8,9 +8,7 @@ auto: true
 
 # presonal config
 title: likebeta's Blog
-feed: feed
-rss: rss
-blog: home.html
+feed: http://feed.ixxoo.me
 comments: disqus
 
 author:
@@ -18,6 +16,7 @@ author:
   nickname: likebeta
   email: huangdi915103@gmail.com
   qmail: http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=GnZzcX94f257WmtrNHl1dw
+  qqlist: http://list.qq.com/cgi-bin/qf_invite?id=eff06957927177ae5d491bb3c18e4a3c5fc328c95b6ae04f
   site: http://www.ixxoo.me
 
 seo: 
