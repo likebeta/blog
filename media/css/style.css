@@ -106,14 +106,21 @@ clear:both;
 
 blockquote,.archivetitle{
 /*background:url(images/quote.png) no-repeat bottom right;*/
-background-color:#EAE9E4;
-padding:15px;
-border-radius:3px 3px 3px 3px;
--webkit-border-radius:3px 3px 3px 3px;
--moz-border-radius:3px;
-color:#555;
-margin:15px 0 10px 0;
-text-shadow:none;
+background-color: #e2e2e2;
+padding: 0.5em 1em;;
+border-radius: 3px 3px 3px 3px;
+-webkit-border-radius: 3px 3px 3px 3px;
+-moz-border-radius: 3px;
+color: #555;
+margin: 15px 0 10px 0;
+text-shadow: none;
+border: 1px solid #ccc;
+border-left: 0.4em solid #bbb;
+}
+
+blockquote code{
+margin:0;
+border:0;
 }
 
 h2.archivetitle{
