@@ -1,17 +1,17 @@
 $(document).ready(function($){
-    oneBit = new OneBit('../usr/plugins/BinjooKit/1bit/1bit.swf');
+    /*oneBit = new OneBit('../usr/plugins/BinjooKit/1bit/1bit.swf');
     oneBit.ready(function() {
         oneBit.specify('color', '#40AA52');
         oneBit.specify('playerSize', '10');
         oneBit.specify('analytics', true);
         oneBit.apply('a.mp3');
-    });
+    });*/
     //go top
     $("a#gotop").click(function(){$("html,body").animate({scrollTop:"0px"},600);return false});
     //email显示
-    $(".myemail").click(function(){var d="i";var f="binjoo.net";var e=d+"@"+f;$(this).hide();setTimeout(function(){var g=$(".myemail");g.next().hide();g.text(e);g.attr("href","mailto:"+e).unbind("click");g.fadeIn(2000)},1)});
+    $(".myemail").click(function(){var d="ixxoo.me";var f="gmail.com";var e=d+"@"+f;$(this).hide();setTimeout(function(){var g=$(".myemail");g.next().hide();g.text(e);g.attr("href","mailto:"+e).unbind("click");g.fadeIn(2000)},1)});
     //网盘
-	$(".disk-left ol li a").click(function() {
+	/*$(".disk-left ol li a").click(function() {
 		//var v = $(this).attr("class");
 		$(".disk-rigth ol").hide(100).empty();
 		var d = "http://ajax.googleapis.com/ajax/services/feed/load?v=1.0&q=" + this.href + "/rss.xml&num=100&callback=?";
@@ -27,6 +27,7 @@ $(document).ready(function($){
 		});
 		return false
 	})
+	*/
     //新窗口打开
     $("#content .post .con a:not(a[rel=nofollow], a[href^=javascript], a[class=more]), #comments .comment-list a[rel*=nofollow]").attr({
         target:"_blank"
