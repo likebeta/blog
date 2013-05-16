@@ -70,7 +70,7 @@ background:#eeeeee;
 }
 #menu ul .current a {
 color:#40aa52;
-background:url(images/menu-current.png) no-repeat center 28px;
+/*background:url(images/menu-current.png) no-repeat center 28px;*/
 }
 
 div,form,img,ul,ol,li,dl,dt,dd {
@@ -105,7 +105,7 @@ clear:both;
 }
 
 blockquote,.archivetitle{
-background:url(images/quote.png) no-repeat bottom right;
+/*background:url(images/quote.png) no-repeat bottom right;*/
 background-color:#EAE9E4;
 padding:15px;
 border-radius:3px 3px 3px 3px;
@@ -232,7 +232,7 @@ background:url(../img/rss.png) no-repeat right 2px;
 padding:5px 5px 5px 30px;
 border:1px solid #CBCBCB;
 line-height:16px;
-background:#F7F7F7 url(images/sb.png) no-repeat 10px 7px;
+/*background:#F7F7F7 url(images/sb.png) no-repeat 10px 7px;*/
 box-shadow:0 1px 3px rgba(0,0,0,0.1) inset;
 -moz-box-shadow:0 1px 3px rgba(0,0,0,0.1) inset;
 -webkit-box-shadow:0 1px 3px rgba(0,0,0,0.1) inset;
@@ -382,10 +382,10 @@ float:left;
 list-style-type:none;
 margin-right:9px;
 padding:0 3px 0 0;
-background:url(images/tags.png) no-repeat right -25px;
+/*background:url(images/tags.png) no-repeat right -25px;*/
 }
 .post .tags ul li a{
-background:url(images/tags.png) no-repeat 0 0px;
+/*background:url(images/tags.png) no-repeat 0 0px;*/
 float:left;
 height:19px;
 line-height:17px;
@@ -402,7 +402,7 @@ text-transform:uppercase;
 .post .pageinfo {
 height:4px;
 margin-top:12px;
-background:url(images/post_h2.gif) top no-repeat;
+/*background:url(images/post_h2.gif) top no-repeat;*/
 position:relative;
 padding:2px 0 0;
 }
@@ -423,7 +423,7 @@ padding:5px 0;
 }
 
 .post p.read-more {
-background:url(images/icons.gif) 0 -315px no-repeat;
+/*background:url(images/icons.gif) 0 -315px no-repeat;*/
 padding-left:17px;
 font-size:12px;
 }
@@ -517,19 +517,21 @@ text-decoration:underline;
 }
 
 code{
-margin: 0 0px;
-padding: 0px 3px;
+/*margin: 0px 3px;
+padding: 3px 6px;*/
+margin: 0 0.5em;
+padding: 0.3em 0.5em;
 white-space: nowrap;
-border: 1px solid #eaeaea;
-background-color: #FFEFC6;
+border: 1px solid #CCCCCC;
+background-color: #E2E2E2;
 border-radius: 3px;
 }
 .post .con pre code {
 display: block;
 padding: 0.5em 1em;
 margin: 1em 0;
-border: 1px dashed #FFC463;
-background: #FFEFC6;
+border: 1px solid #CCCCCC;
+background: #E2E2E2;
 font-family: Consolas,Menlo,Monaco,"Lucida Console","Liberation Mono","DejaVu Sans Mono","Bitstream Vera Sans Mono","Courier New",monospace,serif;
 /*overflow: auto;
 max-height: 500px;*/
@@ -614,7 +616,7 @@ padding:5px 0;
 height:25px;
 line-height:25px;
 border-bottom:1px #d0d4c8 dashed;
-background:url(images/ico-1.gif) 5px 11px no-repeat;
+/*background:url(images/ico-1.gif) 5px 11px no-repeat;*/
 padding-left:15px;
 }
 
@@ -665,7 +667,7 @@ padding:0;
 }
 
 .sidebar .block.comment .two{
-background:url(images/greybg.png);
+/*background:url(images/greybg.png);*/
 }
 
 .sidebar .block.comment div{
@@ -845,7 +847,7 @@ color:#aaa;
 }
 .comment-children {
 padding-left:20px;/*64px*/
-background:url(images/menu-current.png) no-repeat 11px -17px;
+/*background:url(images/menu-current.png) no-repeat 11px -17px;*/
 }
 .comment-reply a {
 margin-top:-200px;
@@ -1245,7 +1247,7 @@ padding-left:15px;
 	-webkit-border-radius:5px;
 	-moz-border-radius:5px;
 	-khtml-border-radius:5px;
-	background:url(images/download.png) no-repeat 20px 50% #EFEFEF;
+	/*background:url(images/download.png) no-repeat 20px 50% #EFEFEF;*/
 	border:1px solid #ddd;
 	color:#999;
 }
