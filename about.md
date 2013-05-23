@@ -18,17 +18,19 @@ about: true
 
 #### 博客
 
-本站架构: Jekyll+Markdown+Github Pages  
+本站架构: Jekyll + Markdown + Github Pages  
 折腾历程: 百度空间,csdn,博客园,WordPress,Typecho......  
 累了, 我希望这是我的最后一站
 
 #### 联系
 
-腾讯微薄: [http://t.qq.com/likebeta][1] 
-Github: [https://github.com/likebeta][2]  
+[腾讯微薄/likebeta][1]  
+[Github/likebeta][2]  
+[Email/likebeta][3]
 
 
 [1]:http://t.qq.com/likebeta
 [2]:https://github.com/likebeta
+[3]:{{ site.qqmail }}
 
 
