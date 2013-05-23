@@ -31,6 +31,6 @@ about: true
 
 [1]:http://t.qq.com/likebeta
 [2]:https://github.com/likebeta
-[3]:{{ site.qqmail }}
+[3]:{{ site.author.qqmail }}
 
 
