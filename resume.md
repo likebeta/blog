@@ -18,4 +18,4 @@ Linux, C/C++, PHP, Javascript
 
 1. My blog: <http://www.ixxoo.me>
 2. cnblogs: <http://likebeta.cnblogs.com>
-3.  github: <http://github.com>
+3.  github: <http://github.com/likebeta>
