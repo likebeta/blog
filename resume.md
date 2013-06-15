@@ -19,7 +19,7 @@ Linux, C/C++, PHP, Javascript
 
 ####Tools
 
-Vim, Sublime Text, Ubuntu, Centos, Win7
+Ubuntu, Centos, Win7, Vim, Sublime Text, Git, Visual studio
 
 ####Favor
 
@@ -31,3 +31,4 @@ Basketball, Movie, Coding, Game, Gigital
 2. [blog/cnblogs](http://likebeta.cnblogs.com)
 3. [code/github](http://github.com/likebeta)
 4. [code/app](http://app.ixxoo.me)
+5. [microblog/tqq](http://t.qq.com/likebeta)
