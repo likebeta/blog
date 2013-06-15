@@ -1,6 +1,7 @@
 ---
 title: resume
 layout: page
+resume: true
 ---
 
 yisilong(@Beijing), Male, Single, Birth: 1990/11/19
