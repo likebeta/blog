@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 推倒重来，开始写blog
-tags: blog
+tags: [blog]
 ---
 
 最近喜欢上了Git,然后对Github一发不可收拾, 原来也听过使用Github Pages搭建博客, 当时因为在使用WordPress, 没怎么注意这个, 偶然的机会看到了阮一峰博客上介绍[Github Pages和Jekyll入门][1], 刹那间有种相逢恨晚的感觉...
