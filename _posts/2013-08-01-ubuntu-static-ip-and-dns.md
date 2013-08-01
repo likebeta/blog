@@ -4,7 +4,7 @@ title: ubuntu配置静态ip和dns
 tags: [ubuntu,dns,ip]
 ---
 
-前段时间同事离职，他的自己配置比较好，我无耻的和老大申请，换用他的主机，收编了他的显示器。这下内存和硬盘都上去了，总得折腾点事情做啊，安装虚拟机，折腾个 ubuntu 用用，刚好同事的 ip 我也霸占了(我们局域网的 ip 是静态绑定的)。我想把原来在 windows 下搭建的 php 环境放在 linux 上，这样的话就需要配置个 ip ， vmware 的网络设置需要是 bridge 模式，不能是原来的 nat 模式。 debian 下配置静态 ip 和 dns 挺简单的， ubuntu 下有点不同，再次记录下。
+前段时间同事离职，他的机子配置比较好，我和老大申请，无耻的换用他的主机，收编了他的显示器。这下内存和硬盘都上去了，总得折腾点事情做啊，安装虚拟机，折腾个 ubuntu 用用，刚好同事的 ip 我也霸占了(我们局域网的 ip 是静态绑定的)。我想把原来在 windows 下搭建的 php 环境放在 linux 上，这样的话就需要配置个 ip ， vmware 的网络设置需要是 bridge 模式，不能是原来的 nat 模式。 debian 下配置静态 ip 和 dns 挺简单的， ubuntu 下有点不同，再次记录下。
 <!--more-->
 
 ####修改网络配置文件
@@ -24,7 +24,7 @@ tags: [ubuntu,dns,ip]
 ip 地址设置完毕了
 
 ####设置 dns 服务器
-这个你可以设置机子的 dns 服务器，我还是比较习惯用谷歌的。 dns 信息存储在 /etc/resolv.conf 中
+这个你可以设置自己的 dns 服务器，我还是比较习惯用谷歌的。 dns 信息存储在 /etc/resolv.conf 中
 
 	sudo vi /etc/resolv.conf
 
