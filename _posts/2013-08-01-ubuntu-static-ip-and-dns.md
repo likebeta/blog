@@ -4,11 +4,11 @@ title: ubuntu配置静态ip和dns
 tags: [ubuntu,dns,ip]
 ---
 
-前段时间同事离职，他的自己配置比较好，我无耻的和老大申请，换用他的主机，收编了他的显示器。这下内存和硬盘都上去了，总得折腾点事情做啊，安装虚拟机，折腾个`ubuntu`用用，刚好同事的`ip`我也霸占了(我们局域网的`ip`是静态绑定的)。我想把原来在`windows`下搭建的`php`环境放在`linux`上，这样的话就需要配置个`ip`，`vmware`的网络设置需要是`bridge`模式，不能是原来的`nat`模式。`debian`下配置静态`ip`和`dns`挺简单的，`ubuntu`下有点不同，再次记录下。
+前段时间同事离职，他的自己配置比较好，我无耻的和老大申请，换用他的主机，收编了他的显示器。这下内存和硬盘都上去了，总得折腾点事情做啊，安装虚拟机，折腾个 ubuntu 用用，刚好同事的 ip 我也霸占了(我们局域网的 ip 是静态绑定的)。我想把原来在 windows 下搭建的 php 环境放在 linux 上，这样的话就需要配置个 ip ， vmware 的网络设置需要是 bridge 模式，不能是原来的 nat 模式。 debian 下配置静态 ip 和 dns 挺简单的， ubuntu 下有点不同，再次记录下。
 <!--more-->
 
 ####修改网络配置文件
-网络配置文件存储在`/etc/network/interfaces`中
+网络配置文件存储在 /etc/network/interfaces 中
 
 	sudo vi /etc/network/interfaces
 
@@ -21,10 +21,10 @@ tags: [ubuntu,dns,ip]
 	address 192.168.1.155 #静态ip
 	netmask 255.255.255.0 #子网掩码
 	gateway 192.168.1.1 #网关地址
-`ip`地址设置完毕了
+ip 地址设置完毕了
 
-####设置`dns`服务器
-这个你可以设置机子的`dns`服务器，我还是比较习惯用谷歌的。`dns`信息存储在`/etc/resolv.conf`中
+####设置 dns 服务器
+这个你可以设置机子的 dns 服务器，我还是比较习惯用谷歌的。 dns 信息存储在 /etc/resolv.conf 中
 
 	sudo vi /etc/resolv.conf
 
@@ -33,7 +33,7 @@ tags: [ubuntu,dns,ip]
 	nameserver 8.8.8.8 #首选dns服务器
 	#nameserver x.x.x.x #备选dns服务器
 
-`dns`服务器也设置完毕。
+dns 服务器也设置完毕。
 
 ####重启网络
 需要重启下网络才能生效，命令如下
@@ -41,19 +41,19 @@ tags: [ubuntu,dns,ip]
 	sudo /etc/init.d/networking restart
 
 ####问题
-`debian`或者`centos`按照上面设置后就彻底没有问题了，但是`ubuntu`在重启电脑后，`dns`的设置都丢失了。原因是`/etc/resolv.conf`是动态创建的，重启后会被覆盖。晚上找到解决方法两个：
+debian 或者 centos 按照上面设置后就彻底没有问题了，但是 ubuntu 在重启电脑后， dns 的设置都丢失了。原因是 /etc/resolv.conf 是动态创建的，重启后会被覆盖。晚上找到解决方法两个：
 
-**`/etc/network/interfaces`最后添加`dns`服务器**
+**/etc/network/interfaces 最后添加 dns 服务器**
 
 	dns-nameservers 8.8.8.8
 
-重启网络就行了，此时`/etc/resolv.conf`中也会添加上面的`dns`
+重启网络就行了，此时 /etc/resolv.conf 中也会添加上面的 dns 
 
-**`/etc/resolvconf/resolv.conf.d/base`中添加`dns`服务器**
+**/etc/resolvconf/resolv.conf.d/base 中添加 dns 服务器**
 
 	nameserver 8.8.8.8 #首选dns服务器
 	#nameserver x.x.x.x #备选dns服务器
 
-保存后，执行`resolvconf -u`就行了，此时`/etc/resolv.conf`中也会添加上面的`dns`
+保存后，执行 resolvconf -u 就行了，此时 /etc/resolv.conf 中也会添加上面的 dns 
 
 至此，全部配置完毕。
