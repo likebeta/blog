@@ -1294,6 +1294,18 @@ padding-left:15px;
 }
 
 .fir ul li a {
-color: #40aa52;
-padding-left: 1em;
+	color: #40aa52;
+	padding-left: 1em;
+}
+
+.douban-list ul li {
+	width: 80px;
+	float: left;
+	list-style: none outside none;
+}
+
+.douban-list ul li img {
+	width: 70px;
+	height: 110px;
+	border: solid 1px #DDD;
 }
