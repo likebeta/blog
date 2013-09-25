@@ -4,8 +4,8 @@
 			</header>
 			<nav id="menu">
 				<ul class="header-nav">
-					<li{% if page.nav %} class="current"{% endif %}><a href="{{site.url}}/nav.html">导航</a></li>
 					<li><a href="http://app.ixxoo.me" target="_blank">应用</a></li>
+					<li{% if page.read %} class="current"{% endif %}><a href="{{site.url}}/read.html">读书</a></li>
 					<li{% if page.resume %} class="current"{% endif %}><a href="{{site.url}}/resume.html">简历</a></li>
 					<li{% if page.archives %} class="current"{% endif %}><a href="{{site.url}}/archives.html">存档</a></li>
 					<li{% if page.about %} class="current"{% endif %}><a href="{{site.url}}/about.html">关于</a></li>
