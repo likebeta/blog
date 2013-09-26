@@ -10,7 +10,7 @@ nav: true
 - app: <http://app.ixxoo.me>
 - lib: <http://lib.ixxoo.me>
 - cdn: <http://cdn.ixxoo.me>
-- Github: <https://github.com/likebeta>
+- github: <https://github.com/likebeta>
 - stackoverflow: <http://stackoverflow.com/users/1931027/likebeta>
 - v2ex: <http://www.v2ex.com/member/likebeta>
 - oschina: <http://my.oschina.net/likebeta>

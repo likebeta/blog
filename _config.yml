@@ -1,5 +1,5 @@
 markdown: rdiscount
-permalink: :title.html
+permalink: /:title.html
 url: http://blog.ixxoo.me
 lsi: true
 pygments: true
