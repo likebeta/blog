@@ -39,15 +39,15 @@ tags: [factory,pattern]
 c++实现：
 
 {% highlight cpp %}
-// IMX.h
-#ifndef __IMX_H__
-#define __IMX_H__
+// IPhone.h
+#ifndef __IPHONE_H__
+#define __IPHONE_H__
 
-class IMX
+class IPhone
 {
 public:
-	IMX(){};
-	virtual ~IMX(){};
+	IPhone(){};
+	virtual ~IPhone(){};
 	virtual void showName() = 0;
 };
 
@@ -55,32 +55,32 @@ public:
 {% endhighlight %}
 
 {% highlight cpp %}
-// MXPhone.h
-#ifndef __MX_PHONE_H__
-#define __MX_PHONE_H__
-#include "IMX.h"
+// Phone.h
+#ifndef __PHONE_H__
+#define __PHONE_H__
+#include "IPhone.h"
 
-class CMX1:public IMX
+class CMX1Phone:public IPhone
 {
 public:
-	CMX1();
-	virtual ~CMX1();
+	CMX1Phone();
+	virtual ~CMX1Phone();
 	virtual void showName();
 };
 
-class CMX2:public IMX
+class CMX2Phone:public IPhone
 {
 public:
-	CMX2();
-	virtual ~CMX2();
+	CMX2Phone();
+	virtual ~CMX2Phone();
 	virtual void showName();
 };
 
-class CMX3:public IMX
+class CMI1Phone:public IPhone
 {
 public:
-	CMX3();
-	virtual ~CMX3();
+	CMI1Phone();
+	virtual ~CMI1Phone();
 	virtual void showName();
 };
 
@@ -88,47 +88,47 @@ public:
 {% endhighlight %}
 
 {% highlight cpp %}
-// MXPhone.cpp
-#include "MXPhone.h"
+// Phone.cpp
+#include "Phone.h"
 #include <iostream>
 
-CMX1::CMX1()
+CMX1Phone::CMX1Phone()
 {
 }
 
-CMX1::~CMX1()
+CMX1Phone::~CMX1Phone()
 {
 }
 
-void CMX1::showName()
+void CMX1Phone::showName()
 {
 	std::cout << "I am mx1 of meizu!\n";
 }
 
-CMX2::CMX2()
+CMX2Phone::CMX2Phone()
 {
 }
 
-CMX2::~CMX2()
+CMX2Phone::~CMX2Phone()
 {
 }
 
-void CMX2::showName()
+void CMX2Phone::showName()
 {
 	std::cout << "I am mx2 of meizu!\n";
 }
 
-CMX3::CMX3()
+CMI1Phone::CMI1Phone()
 {
 }
 
-CMX3::~CMX3()
+CMI1Phone::~CMI1Phone()
 {
 }
 
-void CMX3::showName()
+void CMI1Phone::showName()
 {
-	std::cout << "I am mx3 of meizu!\n";
+	std::cout << "I am mi1 of xiaomi!\n";
 }
 {% endhighlight %}
 
@@ -136,42 +136,38 @@ void CMX3::showName()
 // PhoneFactory.h
 #ifndef __PHONE_FACTORY_H__
 #define __PHONE_FACTORY_H__
-#include "IMX.h"
-#include "MXPhone.h"
+#include "IPhone.h"
+#include "Phone.h"
 #include <string>
 
 class CPhoneFactory
 {
 public:
-	static IMX* createMXPhone(std::string strName);
+	static IPhone* createPhone(std::string strName);
 };
 
-IMX* CPhoneFactory::createMXPhone(std::string strName)
+IPhone* CPhoneFactory::createPhone(std::string strName)
 {
-	IMX* pMX = NULL;
-	if (strName == "MX1")
+	IPhone* pPhone = NULL;
+	if (strName == "mx1")
 	{
-		pMX = new CMX1();
+		pPhone = new CMX1Phone();
 	}
-	else if (strName == "MX2")
+	else if (strName == "mx2")
 	{
-		pMX = new CMX2();
+		pPhone = new CMX2Phone();
 	}
-	else if (strName == "MX3")
+	else if (strName == "mi1")
 	{
-		pMX = new CMX3();
-	}
-
-	if (pMX != NULL)
-	{
-		pMX->showName();
-	}
-	else
-	{
-		std::cout << "not exist in meizu!\n";
+		pPhone = new CMI1Phone();
 	}
 
-	return pMX;
+	if (pPhone != NULL)
+	{
+		pPhone->showName();
+	}
+
+	return pPhone;
 }
 
 #endif
@@ -186,10 +182,13 @@ using namespace std;
 
 int main()
 {
-	std::string strName[4] = {"MX1","MX2","MX3","MX4"};
-	for (int i = 0; i < 4; ++i)
+	std::string strName[5] = {"mx1","mx2","mx3","mi1","mi2"};
+	for (int i = 0; i < 5; ++i)
 	{
-		CPhoneFactory::createMXPhone(strName[i]);
+		if (NULL == CPhoneFactory::createPhone(strName[i]))
+		{
+			std::cout << "not exist " << strName[i] << "!\n";
+		}
 	}
 	return 0;
 }
@@ -197,4 +196,4 @@ int main()
 
 #### 总结
 
-PhoneFactory的createMXPhone只是一个根据某种标识索引并创建出目标对象，我们可以用id，字符串都可以，我们目前服务器的代码是根据消息id来索引具体的消息体，它这里面作为类的静态方法开启来听别扭的， 我更倾向于直接是一个全局静态方法或者放在某个namespace中。
+PhoneFactory的createPhone只是一个根据某种标识索引并创建出目标对象，我们可以用id，字符串都可以，我们目前服务器的代码是根据消息id来索引具体的消息体，它这里面作为类的静态方法开启来听别扭的， 我更倾向于直接是一个全局静态方法或者放在某个namespace中。
