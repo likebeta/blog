@@ -185,10 +185,12 @@ int main()
 	std::string strName[5] = {"mx1","mx2","mx3","mi1","mi2"};
 	for (int i = 0; i < 5; ++i)
 	{
-		if (NULL == CPhoneFactory::createPhone(strName[i]))
+		IPhone* pPhone = CPhoneFactory::createPhone(strName[i]);
+		if (pPhone == NULL)
 		{
 			std::cout << "not exist " << strName[i] << "!\n";
 		}
+		delete pPhone;
 	}
 	return 0;
 }
