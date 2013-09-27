@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 设计模式 - 简单工厂模式
+title: 设计模式 - 工厂模式
 tags: [factory,pattern]
 ---
 
