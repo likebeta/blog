@@ -71,7 +71,8 @@ int main()
 
 Singleton模式看起来简单，其实上面的单例也是有问题的，比如非线程安全，这里有一篇文章讨论了Singleton模式的几种写法，有兴趣可以看看。
 
-[单例模式（Singleton）的6种实现][1]
-
+[单例模式（Singleton）的6种实现][1]  
+[.NET设计模式（2）：单件模式（Singleton Pattern）][2]
 
   [1]: http://www.cnblogs.com/rush/archive/2011/10/30/2229565.html
+  [2]: http://terrylee.cnblogs.com/archive/2005/12/09/293509.html
