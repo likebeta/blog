@@ -214,7 +214,7 @@ float:left;
 }
 
 #menu ul li a {
-text-transform:uppercase;
+/*text-transform:uppercase;*/
 font-size:14px;
 padding:0 21px 30px 21px;
 height:12px;
