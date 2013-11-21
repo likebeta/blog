@@ -6,31 +6,21 @@ about: true
 
 #### 我
 
-昵称: likebeta  
-职业: 码农  
-性别: 暂定男  
-星座: 天蝎座  
-爱好: 篮球,敲代码,意淫,各种折腾  
-作风: code奸我千百遍,我待code如初见  
-业绩: 想法挺多,成就没有  
-现状: 蜗居北京海淀某处，三无人员，纯北漂  
-Motto: 梦想是注定孤独的旅行
+男，双性恋，与80后一起长大的90后，非典型天蝎，间歇性神经病，职业coder，纯北漂，蜗居北京海淀某处，想法挺多，成就没有，爱好篮球，看书，各种YY，最近在看[怎样证明你不是神经病?][4]
 
 #### 博客
 
 本站架构: Jekyll + Markdown + Github Pages  
-折腾历程: 百度空间,csdn,博客园,WordPress,Typecho......  
-累了, 我希望这是我的最后一站
 
 #### 联系
 
-[腾讯微薄/likebeta][1]  
-[Github/likebeta][2]  
-[Email/likebeta][3]
+[tqq/likebeta][1]  
+[github/likebeta][2]  
+[email/likebeta][3]
 
 
 [1]:http://t.qq.com/likebeta
 [2]:https://github.com/likebeta
 [3]:{{ site.author.qqmail }}
-
+[4]:http://book.douban.com/subject/10736800/
 
