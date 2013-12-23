@@ -6,7 +6,7 @@ about: true
 
 #### 我
 
-男，泛性恋，与80后一起长大的90后，非典型天蝎，间歇性神经病，职业coder，纯北漂，蜗居北京海淀某处，想法挺多，成就没有，爱好篮球，看书，各种YY，最近在看[改变带来医治][100]
+男，泛性恋，与80后一起长大的90后，非典型天蝎，间歇性神经病，职业coder，纯北漂，蜗居北京海淀某处，想法挺多，成就没有，爱好篮球，看书，各种YY，最近在看[你永远都无法叫醒一个装睡的人][100]
 
 #### 技术
 
@@ -37,5 +37,5 @@ Linux, C/C++, PHP, Javascript, Lua, Python
 [2]:{{ site.author.qqmail }}
 [3]:http://t.qq.com/likebeta
 [4]:http://weibo.com/likebeta
-[100]:http://book.douban.com/subject/10868148/
+[100]:http://book.douban.com/subject/10601137/
 
