@@ -8,6 +8,7 @@ Simple Factory模式经常在系统开发中用到，但是这并不是 Factory 
 
 Factory模式的应用并不是只是为了封装对象的创建，而是要把对象的创建放到子类中实现：Factory 中只是提供了对象创建的接口，其实现将放在 Factory 的子类ConcreteFactory中进行。
 <!--more-->
+
 #### 优点
 
 Factory 模式在实际开发中应用非常广泛，面向对象的系统经常面临着对象创建问题：  
