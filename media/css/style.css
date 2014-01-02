@@ -359,9 +359,25 @@ margin: 5px 0;
 list-style-type:none;
 min-height:20px;
 line-height:1.4em;
-padding:4px 11px;
+padding:4px 0px;
+margin-left:1.1em;
 }
 
+.post .con ul li {
+list-style:disc inside;
+}
+
+.post .con ol li {
+list-style:decimal inside;
+}
+
+.page .post .con ul li {
+list-style:none;
+}
+
+.page .post .con ol li {
+list-style:none;
+}
 .post .con .oddli {
 -webkit-transition:background .3s linear;
 -moz-transition:background .3s linear;
