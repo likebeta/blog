@@ -28,14 +28,16 @@ Linux, C/C++, PHP, Javascript, Lua, Python
 #### 联系
 
 [github/likebeta][1]  
-[email/likebeta][2]  
-[tqq/likebeta][3]  
-[weibo/likebeta][4]  
+[gurudigger/likebeta][2]  
+[email/likebeta][3]  
+[tqq/likebeta][4]  
+[weibo/likebeta][5]  
 
 
 [1]: https://github.com/likebeta
-[2]: {{ site.author.qqmail }}
-[3]: http://t.qq.com/likebeta
-[4]: http://weibo.com/likebeta
+[2]: http://gurudigger.com/users/likebeta
+[3]: {{ site.author.qqmail }}
+[4]: http://t.qq.com/likebeta
+[5]: http://weibo.com/likebeta
 [100]: http://book.douban.com/subject/20431965/
 
