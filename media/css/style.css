@@ -1337,3 +1337,17 @@ padding-left:15px;
 /*	height: 100px;*/
 	border: solid 1px #DDD;
 }
+
+.avater {
+	width: 760px;
+	margin: auto;
+}
+
+.avater pre {
+	font-family: "Lucida Console", monospace;
+	font-size: 9pt;
+	margin: auto 10px;
+	color: #000000;
+	float: left;
+	line-height: 12px;
+}
