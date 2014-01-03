@@ -1325,3 +1325,15 @@ padding-left:15px;
 	height: 100px;
 	border: solid 1px #DDD;
 }
+
+.flickr ul li {
+	width: 276px;
+	float: left;
+	list-style: none outside none;
+}
+
+.flickr ul li img {
+	width: 256px;
+/*	height: 100px;*/
+	border: solid 1px #DDD;
+}
