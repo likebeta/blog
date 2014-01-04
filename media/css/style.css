@@ -1326,6 +1326,10 @@ padding-left:15px;
 	border: solid 1px #DDD;
 }
 
+.flickr,.instagram {
+	margin-top: 5px;
+}
+
 .flickr ul li {
 	width: 276px;
 	float: left;
@@ -1335,6 +1339,15 @@ padding-left:15px;
 .flickr ul li img {
 	width: 256px;
 /*	height: 100px;*/
+	border: solid 1px #DDD;
+}
+
+.instagram ul li {
+	float: left;
+	list-style: none outside none;
+}
+
+.instagram ul li img {
 	border: solid 1px #DDD;
 }
 

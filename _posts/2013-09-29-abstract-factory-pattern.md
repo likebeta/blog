@@ -18,7 +18,7 @@ Abstract Factory 模式关键就是将这一组对象的创建封装到一个用
 
 #### 实现
 
-{% highlight cpp %}
+```cpp
 // IPhone.h
 #ifndef __IPHONE_H__
 #define __IPHONE_H__
@@ -32,9 +32,9 @@ public:
 };
 
 #endif
-{% endhighlight %}
+```
 
-{% highlight cpp %}
+```cpp
 // Phone.h
 #ifndef __PHONE_H__
 #define __PHONE_H__
@@ -81,9 +81,9 @@ public:
 };
 
 #endif
-{% endhighlight %}
+```
 
-{% highlight cpp %}
+```cpp
 // Phone.cpp
 #include "Phone.h"
 #include <iostream>
@@ -152,9 +152,9 @@ void CMI2Phone::showName()
 {
 	std::cout << "I am mi2 of xiaomi!\n";
 }
-{% endhighlight %}
+```
 
-{% highlight cpp %}
+```cpp
 // IBattery.h
 #ifndef __IBATTERY_H__
 #define __IBATTERY_H__
@@ -168,9 +168,9 @@ public:
 };
 
 #endif
-{% endhighlight %}
+```
 
-{% highlight cpp %}
+```cpp
 // Battery.h
 #ifndef __BATTERY_H__
 #define __BATTERY_H__
@@ -217,9 +217,9 @@ public:
 };
 
 #endif
-{% endhighlight %}
+```
 
-{% highlight cpp %}
+```cpp
 // Battery.cpp
 #include "Battery.h"
 #include <iostream>
@@ -288,9 +288,9 @@ void CMI2Battery::showName()
 {
 	std::cout << "I am mi2's battery of xiaomi!\n";
 }
-{% endhighlight %}
+```
 
-{% highlight cpp %}
+```cpp
 // IFactory.h
 #ifndef __IFACTORY_H__
 #define __IFACTORY_H__
@@ -308,9 +308,9 @@ public:
 };
 
 #endif
-{% endhighlight %}
+```
 
-{% highlight cpp %}
+```cpp
 // BatteryFactory.h
 #ifndef __BATTERY_FACTORY_H__
 #define __BATTERY_FACTORY_H__
@@ -337,9 +337,9 @@ public:
 };
 
 #endif
-{% endhighlight %}
+```
 
-{% highlight cpp %}
+```cpp
 // BatteryFactory.cpp
 #include "Factory.h"
 #include "Phone.h"
@@ -448,9 +448,9 @@ IBattery* CMIFactory::createBattery(std::string strName)
 
 	return pBattery;
 }
-{% endhighlight %}
+```
 
-{% highlight cpp %}
+```cpp
 // main.cpp
 #include <iostream>
 #include <string>
@@ -484,4 +484,4 @@ int main()
 	}
 	return 0;
 }
-{% endhighlight %}
+```

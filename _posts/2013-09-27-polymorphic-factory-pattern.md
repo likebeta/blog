@@ -23,7 +23,7 @@ Factory模式也带来至少以下两个问题：
 
 #### 实现
 
-{% highlight cpp %}
+```cpp
 // IPhone.h
 #ifndef __IPHONE_H__
 #define __IPHONE_H__
@@ -37,9 +37,9 @@ public:
 };
 
 #endif
-{% endhighlight %}
+```
 
-{% highlight cpp %}
+```cpp
 // Phone.h
 #ifndef __PHONE_H__
 #define __PHONE_H__
@@ -86,9 +86,9 @@ public:
 };
 
 #endif
-{% endhighlight %}
+```
 
-{% highlight cpp %}
+```cpp
 // Phone.cpp
 #include "Phone.h"
 #include <iostream>
@@ -157,9 +157,9 @@ void CMI2Phone::showName()
 {
 	std::cout << "I am mi2 of xiaomi!\n";
 }
-{% endhighlight %}
+```
 
-{% highlight cpp %}
+```cpp
 // IFactory.h
 #ifndef __IFACTORY_H__
 #define __IFACTORY_H__
@@ -175,9 +175,9 @@ public:
 };
 
 #endif
-{% endhighlight %}
+```
 
-{% highlight cpp %}
+```cpp
 // PhoneFactory.h
 #ifndef __PHONE_FACTORY_H__
 #define __PHONE_FACTORY_H__
@@ -202,9 +202,9 @@ public:
 };
 
 #endif
-{% endhighlight %}
+```
 
-{% highlight cpp %}
+```cpp
 // PhoneFactory.cpp
 #include "PhoneFactory.h"
 #include "Phone.h"
@@ -268,9 +268,9 @@ IPhone* CMIFactory::createPhone(std::string strName)
 
 	return pPhone;
 }
-{% endhighlight %}
+```
 
-{% highlight cpp %}
+```cpp
 // main.cpp
 #include <iostream>
 #include <string>
@@ -297,7 +297,7 @@ int main()
 	}
 	return 0;
 }
-{% endhighlight %}
+```
 
 #### 讨论
 

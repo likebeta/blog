@@ -19,7 +19,7 @@ Singleton 模式解决问题十分常见，我们怎样去创建一个唯一的�
 
 #### 实现
 
-{% highlight cpp %}
+```cpp
 //Singleton.h
 #ifndef __SINGLETON_H__
 #define __SINGLETON_H__
@@ -35,9 +35,9 @@ private:
 }; 
 
 #endif
-{% endhighlight %}
+```
 
-{% highlight cpp %}
+```cpp
 //Singleton.cpp
 #include "Singleton.h" 
 #include <iostream> 
@@ -55,9 +55,9 @@ CSingleton* CSingleton::Instance()
 	} 
 	return _instance; 
 }
-{% endhighlight %}
+```
 
-{% highlight cpp %}
+```cpp
 //main.cpp
 #include "Singleton.h"
 
@@ -66,7 +66,7 @@ int main()
 	CSingleton* pSingleton = CSingleton::Instance(); 
 	return 0;
 }
-{% endhighlight %}
+```
 
 #### 总结
 

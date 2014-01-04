@@ -39,7 +39,7 @@ tags: [factory,pattern]
  
 c++实现：
 
-{% highlight cpp %}
+```cpp
 // IPhone.h
 #ifndef __IPHONE_H__
 #define __IPHONE_H__
@@ -53,9 +53,9 @@ public:
 };
 
 #endif
-{% endhighlight %}
+```
 
-{% highlight cpp %}
+```cpp
 // Phone.h
 #ifndef __PHONE_H__
 #define __PHONE_H__
@@ -86,9 +86,9 @@ public:
 };
 
 #endif
-{% endhighlight %}
+```
 
-{% highlight cpp %}
+```cpp
 // Phone.cpp
 #include "Phone.h"
 #include <iostream>
@@ -131,9 +131,9 @@ void CMI1Phone::showName()
 {
 	std::cout << "I am mi1 of xiaomi!\n";
 }
-{% endhighlight %}
+```
 
-{% highlight cpp %}
+```cpp
 // PhoneFactory.h
 #ifndef __PHONE_FACTORY_H__
 #define __PHONE_FACTORY_H__
@@ -172,9 +172,9 @@ IPhone* CPhoneFactory::createPhone(std::string strName)
 }
 
 #endif
-{% endhighlight %}
+```
 
-{% highlight cpp %}
+```cpp
 // main.cpp
 #include <iostream>
 #include <string>
@@ -195,7 +195,7 @@ int main()
 	}
 	return 0;
 }
-{% endhighlight %}
+```
 
 #### 总结
 

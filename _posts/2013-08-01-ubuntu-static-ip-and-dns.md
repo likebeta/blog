@@ -11,29 +11,38 @@ tags: [ubuntu,dns,ip]
 
 网络配置文件存储在 /etc/network/interfaces 中
 
-	sudo vi /etc/network/interfaces
+```sh
+sudo vi /etc/network/interfaces
+```
 
 填写信息如下：
 
-	auto eth0 #指明网卡eth0在系统启动时自动加载
-	#指明eth0采用ipv4地址，inet表示ipv4地址，inet6表示ipv6地址； static表示静态，dhcp表示动态
-	iface eth0 inet static
+```sh
+auto eth0 #指明网卡eth0在系统启动时自动加载
+#指明eth0采用ipv4地址，inet表示ipv4地址，inet6表示ipv6地址； static表示静态，dhcp表示动态
+iface eth0 inet static
 
-	address 192.168.1.155 #静态ip
-	netmask 255.255.255.0 #子网掩码
-	gateway 192.168.1.1 #网关地址
+address 192.168.1.155 #静态ip
+netmask 255.255.255.0 #子网掩码
+gateway 192.168.1.1 #网关地址
+```
+
 ip 地址设置完毕了
 
 ####设置 dns 服务器
 
 这个你可以设置自己的 dns 服务器，我还是比较习惯用谷歌的。 dns 信息存储在 /etc/resolv.conf 中
 
-	sudo vi /etc/resolv.conf
+```sh
+sudo vi /etc/resolv.conf
+```
 
 添加以下内容
 
-	nameserver 8.8.8.8 #首选dns服务器
-	#nameserver x.x.x.x #备选dns服务器
+```sh
+nameserver 8.8.8.8 #首选dns服务器
+#nameserver x.x.x.x #备选dns服务器
+```
 
 dns 服务器也设置完毕。
 
@@ -41,7 +50,9 @@ dns 服务器也设置完毕。
 
 需要重启下网络才能生效，命令如下
 
-	sudo /etc/init.d/networking restart
+```sh
+sudo /etc/init.d/networking restart
+```
 
 ####问题
 
@@ -49,14 +60,18 @@ debian 或者 centos 按照上面设置后就彻底没有问题了，但是 ubun
 
 **/etc/network/interfaces 最后添加 dns 服务器**
 
-	dns-nameservers 8.8.8.8
+```sh
+dns-nameservers 8.8.8.8
+```
 
 重启网络就行了，此时 /etc/resolv.conf 中也会添加上面的 dns 
 
 **/etc/resolvconf/resolv.conf.d/base 中添加 dns 服务器**
 
-	nameserver 8.8.8.8 #首选dns服务器
-	#nameserver x.x.x.x #备选dns服务器
+```sh
+nameserver 8.8.8.8 #首选dns服务器
+#nameserver x.x.x.x #备选dns服务器
+```
 
 保存后，执行 resolvconf -u 就行了，此时 /etc/resolv.conf 中也会添加上面的 dns 
 

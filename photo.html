@@ -7,12 +7,26 @@ photo: true
 <article>
 	<div id="archives">
 		<div id="photo" class="photo">
+			<h4>instagram</h4>
+			<div id="instagram" class="instagram"></div>
+			<div class="clear"></div>
+			<h4>flickr</h4>
 			<div id="flickr" class="flickr"></div>
 		</div>
 	</div>
 </article>
+
+<script type="text/javascript" src="{{ site.url }}/media/js/instafeed.min.js"></script>
 <script type="text/javascript" charset="utf-8">
 	$(document).ready(function() {
+		var userFeed = new Instafeed({
+			get: 'user',
+	        userId: 717790068,
+			target: 'instagram',
+			accessToken: '717790068.467ede5.e1cc22bf78aa4539aa858f7ac235ef74'
+		});
+		userFeed.run();
+
 		$.getJSON('http://api.flickr.com/services/rest/?method=flickr.people.getPhotos&api_key=8079916309bfb2fb4d93c9684b4709b9&user_id=96149834@N05&format=json&per_page=100&page=1&jsoncallback=?', 
 		function(data) {
 			if (data.stat != 'ok') return;
