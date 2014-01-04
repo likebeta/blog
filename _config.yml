@@ -1,4 +1,4 @@
-markdown: rdiscount
+markdown: redcarpet
 permalink: /:title.html
 url: http://blog.ixxoo.me
 lsi: true
