@@ -1,6 +1,6 @@
 markdown: rdiscount
 permalink: /:title.html
-url: http://192.168.1.155:4000
+url: http://blog.ixxoo.me
 lsi: true
 pygments: true
 safe: true
