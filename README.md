@@ -1,3 +1,3 @@
 #### home page
 
-It's my blog([http://www.ixxoo.me](http://www.ixxoo.me))
+It's my blog([http://blog.ixxoo.me](http://blog.ixxoo.me))
