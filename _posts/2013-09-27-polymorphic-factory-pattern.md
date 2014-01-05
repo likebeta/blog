@@ -7,6 +7,7 @@ tags: [factory,pattern]
 Simple Factory模式经常在系统开发中用到，但是这并不是 Factory  模式的最大威力所在（因为这可以通过其他方式解决这个问题）。Factory模式不单是提供了创建对象的接口，其最重要的是延迟了子类的实例化。
 
 Factory模式的应用并不是只是为了封装对象的创建，而是要把对象的创建放到子类中实现：Factory 中只是提供了对象创建的接口，其实现将放在 Factory 的子类ConcreteFactory中进行。
+
 <!--more-->
 
 #### 优点

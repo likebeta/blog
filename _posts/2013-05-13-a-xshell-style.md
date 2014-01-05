@@ -5,9 +5,10 @@ tags: [xshell]
 ---
 
 xshell的默认配色风格真的不敢恭维，用久了，眼睛疼，网上搜了一圈，找到了个不错的配色方案，我把放在这里，省的以后再找，还可以凑篇文章，hia hia
+
 <!--more-->
 
-```sh
+```ini
 [Solarized Dark]
 text(bold)=839496
 magenta(bold)=6c71c4

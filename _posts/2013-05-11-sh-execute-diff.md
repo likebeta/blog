@@ -10,7 +10,9 @@ shell脚本的运行大体分为下面几种方式：
 > 2. `./filename` 或 `/$(parent_path)/filename`  
 > 3. `source filename` 或者 `. filename` 
 
-不同的 script 运行方式会造成不一样的结果，比如对 bash 的环境的影响。<!--more-->
+不同的 script 运行方式会造成不一样的结果，比如对 bash 的环境的影响。
+
+<!--more-->
 
 #### 直接的方式运行 script
 
