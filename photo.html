@@ -22,7 +22,7 @@ photo: true
 	$(document).ready(function() {
 		$.getJSON('https://api.instagram.com/v1/users/717790068/media/recent?client_id=e3ab8b93bd294dcb8338c38e1e7f627c&count=100&callback=?', 
 		function(data) {
-			if (data.meta.code != '200') return;
+			if (data.meta.code != 200) return;
 			var strHtml = '<ul>';
 			for (var i = 0; i < data.data.length; i++) {
 				var photo = data.data[i];
