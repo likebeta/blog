@@ -8,7 +8,9 @@ photo: true
 	<div id="archives">
 		<div id="photo" class="photo">
 			<h4>instagram</h4>
-			<div id="instagram" class="instagram"></div>
+			<div class="instagram">
+				<ul id="instagram"></ul>
+			</div>
 			<div class="clear"></div>
 			<h4>flickr</h4>
 			<div id="flickr" class="flickr"></div>
@@ -16,16 +18,21 @@ photo: true
 	</div>
 </article>
 
-<script type="text/javascript" src="{{ site.url }}/media/js/instafeed.min.js"></script>
 <script type="text/javascript" charset="utf-8">
 	$(document).ready(function() {
-		var userFeed = new Instafeed({
-			get: 'user',
-	        userId: 717790068,
-			target: 'instagram',
-			accessToken: '717790068.467ede5.e1cc22bf78aa4539aa858f7ac235ef74'
+		$.getJSON('https://api.instagram.com/v1/users/717790068/media/recent?client_id=e3ab8b93bd294dcb8338c38e1e7f627c&count=100&callback=?', 
+		function(data) {
+			if (data.meta.code != '200') return;
+			var strHtml = '<ul>';
+			for (var i = 0; i < data.data.length; i++) {
+				var photo = data.data[i];
+				strHtml += '<li><a href="' + photo.link + '" target="_blank">';
+				strHtml += '<img src="' + photo.images.thumbnail.url + '" />';
+				strHtml += '</a></li>';
+			}
+			strHtml += '</ul>';
+			$('#instagram').html(strHtml);
 		});
-		userFeed.run();
 
 		$.getJSON('http://api.flickr.com/services/rest/?method=flickr.people.getPhotos&api_key=8079916309bfb2fb4d93c9684b4709b9&user_id=96149834@N05&format=json&per_page=100&page=1&jsoncallback=?', 
 		function(data) {
