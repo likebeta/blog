@@ -6,7 +6,7 @@ about: true
 
 #### 我
 
-男，泛性恋，与80后一起长大的90后，非典型天蝎，间歇性神经病，职业coder，纯北漂，蜗居北京海淀某处，想法挺多，成就没有，爱好篮球，看书，各种YY，最近在看[Redis入门指南][100]
+男，泛性恋，与80后一起长大的90后，非典型天蝎，间歇性神经病，职业coder，纯北漂，蜗居北京海淀某处，想法挺多，成就没有，爱好篮球，看书，各种YY，最近在看[知乎周刊][100]
 
 #### 技术
 
@@ -41,7 +41,7 @@ Linux, C/C++, PHP, Javascript, Lua, Python
 [3]: {{ site.author.qqmail }}
 [4]: http://t.qq.com/likebeta
 [5]: http://weibo.com/likebeta
-[100]: http://book.douban.com/subject/24522045/
+[100]: http://www.amazon.cn/s?ie=UTF8&field-author=%E7%9F%A5%E4%B9%8E&search-alias=digital-text
 
 
 
