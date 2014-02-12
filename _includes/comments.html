@@ -1,0 +1,5 @@
+{% if site.comments == 'duoshuo' %}
+	{% include duoshuo.html %}
+{% else %}
+	{% include disqus.html %}
+{% endif %}
