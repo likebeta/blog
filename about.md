@@ -10,7 +10,7 @@ about: true
 
 #### 技术
 
-Linux, C/C++, PHP, Javascript, Lua, Python
+Linux, C/C++, PHP, Javascript, Lua, Python, Redis
 
 #### 工作
 
