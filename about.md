@@ -15,8 +15,8 @@ Linux, C/C++, PHP, Javascript, Lua, Python, Redis
 #### 工作
 
 1. ***2014.04 - 0000.00:*** working at [tuyoo](http://www.tuyoo.com "在线途游")
-1. ***2012.03 - 2014.04:*** working at [7k7k](http://www.7k7k.com "7k7k小游戏")
-2. ***2008.06 - 2012.06:*** study in [haust](http://www.haust.edu.cn "河南科技大学")
+2. ***2012.03 - 2014.04:*** working at [7k7k](http://www.7k7k.com "7k7k小游戏")
+3. ***2008.06 - 2012.06:*** study in [haust](http://www.haust.edu.cn "河南科技大学")
 
 #### 创业
 
@@ -28,11 +28,11 @@ Linux, C/C++, PHP, Javascript, Lua, Python, Redis
 
 #### 联系
 
-[github/likebeta][1]
-[gurudigger/likebeta][2]
-[email/likebeta][3]
-[tqq/likebeta][4]
-[weibo/likebeta][5]
+1. [github/likebeta][1]
+2. [gurudigger/likebeta][2]
+3. [email/likebeta][3]
+4. [tqq/likebeta][4]
+5. [weibo/likebeta][5]
 
 #### avater
 
