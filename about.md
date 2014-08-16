@@ -6,7 +6,7 @@ about: true
 
 #### 我
 
-男，泛性恋，与80后一起长大的90后，非典型天蝎，间歇性神经病，职业coder，纯北漂，蜗居北京朝阳某处，想法挺多，成就没有，爱好篮球，看书，各种YY，最近在看[如何变得有思想][100]
+男，泛性恋，与80后一起长大的90后，非典型天蝎，间歇性神经病，职业coder，纯北漂，蜗居北京朝阳某处，想法挺多，成就没有，爱好篮球，看书，各种YY，最近在看[一个寻找作者的读者][100]
 
 #### 技术
 
@@ -15,7 +15,7 @@ Linux, C/C++, PHP, Javascript, Lua, Python, Redis
 #### 工作
 
 1. ***2014.04 - 0000.00:*** working at [tuyoo](http://www.tuyoo.com "在线途游")
-2. ***2012.03 - 2014.04:*** working at [7k7k](http://www.7k7k.com "7k7k小游戏")
+2. ***2012.03 - 2014.04:*** work at [7k7k](http://www.7k7k.com "7k7k小游戏")
 3. ***2008.06 - 2012.06:*** study in [haust](http://www.haust.edu.cn "河南科技大学")
 
 #### 创业
@@ -42,7 +42,7 @@ Linux, C/C++, PHP, Javascript, Lua, Python, Redis
 [3]: {{ site.author.qqmail }}
 [4]: http://t.qq.com/likebeta
 [5]: http://weibo.com/likebeta
-[100]: http://read.douban.com/ebook/3966114
+[100]: http://read.douban.com/ebook/3970171
 
 
 <div id="avater" class="avater" style="margin-top: 20px;">
