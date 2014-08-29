@@ -1,5 +1,5 @@
 ---
-title: photo
+title: Photo
 layout: page
 photo: true
 ---
@@ -20,7 +20,7 @@ photo: true
 
 <script type="text/javascript" charset="utf-8">
 	$(document).ready(function() {
-		$.getJSON('https://api.instagram.com/v1/users/717790068/media/recent?client_id=e3ab8b93bd294dcb8338c38e1e7f627c&count=100&callback=?', 
+		$.getJSON('https://api.instagram.com/v1/users/717790068/media/recent?client_id=e3ab8b93bd294dcb8338c38e1e7f627c&count=100&callback=?',
 		function(data) {
 			if (data.meta.code != 200) return;
 			var strHtml = '<ul>';
@@ -34,7 +34,7 @@ photo: true
 			$('#instagram').html(strHtml);
 		});
 
-		$.getJSON('http://api.flickr.com/services/rest/?method=flickr.people.getPhotos&api_key=8079916309bfb2fb4d93c9684b4709b9&user_id=96149834@N05&format=json&per_page=100&page=1&jsoncallback=?', 
+		$.getJSON('http://api.flickr.com/services/rest/?method=flickr.people.getPhotos&api_key=8079916309bfb2fb4d93c9684b4709b9&user_id=96149834@N05&format=json&per_page=100&page=1&jsoncallback=?',
 		function(data) {
 			if (data.stat != 'ok') return;
 			if (data.photos.total <= 0) return;
