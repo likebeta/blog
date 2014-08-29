@@ -6,7 +6,7 @@ about: true
 
 #### 我
 
-男，泛性恋，与80后一起长大的90后，非典型天蝎，间歇性神经病，职业coder，纯北漂，蜗居北京朝阳某处，想法挺多，成就没有，爱好篮球，看书，各种YY，最近在看[一个寻找作者的读者][100]
+男，泛性恋，与80后一起长大的90后，非典型天蝎，间歇性神经病，职业coder，纯北漂，蜗居北京朝阳某处，想法挺多，成就没有，爱好篮球，看书，各种YY，最近在看[伟哥的python私房菜][100]
 
 #### 技术
 
@@ -42,7 +42,7 @@ Linux, C/C++, PHP, Javascript, Lua, Python, Redis
 [3]: {{ site.author.qqmail }}
 [4]: http://t.qq.com/likebeta
 [5]: http://weibo.com/likebeta
-[100]: http://read.douban.com/ebook/3970171
+[100]: http://read.douban.com/ebook/4078906
 
 
 <div id="avater" class="avater" style="margin-top: 20px;">
