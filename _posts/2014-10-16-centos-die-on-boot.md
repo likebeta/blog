@@ -10,8 +10,10 @@ tags: [centos, linux]
 
 网上说可能是/boot/grub/menu.lst中的信息丢失，还原就好。进入grub后操作如下：
 
+<!--more-->
+
 > grub>root (sda1)  按[Enter]    // 这是linux所在的分区符号（一般情况下是在sda1分区上）
-> grub>kernel /vmlinuz-2.6.32-358.el5  按[Enter]    // 加载内核（一定要输入原内核版本号，可按[Tab]键补全）
+> grub>kernel /vmlinuz-2.6.32-358.el5  按[Enter]    // 加载内核(一定要输入原内核版本号，可按[Tab]键补全)
 > grub>initrd /initrd-2.6.32-358.el5.img  按[Enter]    // 初始化linux镜像
 > grub>boot
 
