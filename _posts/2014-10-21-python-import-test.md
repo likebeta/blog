@@ -10,15 +10,15 @@ tags: [python]
 
 #### 目录结构
 <pre>
-foo
-|--bar
-|----__init__.py
-|----main.py
-|--case.py
-|--case1.py
-|--case2.py
-|--case3.py
-|--case4.py
+foo/
+├── bar/
+|   ├── __init__.py
+|   └── main.py
+├── case.py
+├── case1.py
+├── case2.py
+├── case3.py
+└── case4.py
 </pre>
 
 #### 测试代码
