@@ -8,8 +8,6 @@ nav: true
 
 - blog: <http://www.ixxoo.me>
 - app: <http://app.ixxoo.me>
-- lib: <http://lib.ixxoo.me>
-- cdn: <http://cdn.ixxoo.me>
 - github: <https://github.com/likebeta>
 - stackoverflow: <http://stackoverflow.com/users/1931027/likebeta>
 - v2ex: <http://www.v2ex.com/member/likebeta>
