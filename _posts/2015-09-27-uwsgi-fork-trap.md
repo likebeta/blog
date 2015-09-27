@@ -5,6 +5,7 @@ tags: [uwsgi, fork, web.py, python, pypy, nginx]
 ---
 
 游戏的sdk使用的是 `nginx+uwsgi+web.py`， 虽然用了一段时间了， 但是很多细节并没有仔细去推敲。最近要测试游戏端(tcp)的逻辑，用了5000个并发来测试。由于 sdk的日子都打印在一个log文件中， 并发打印的时候无法分辨一个请求处理过程中打印的完整请求，所以想加个标识， 结果引出来一系列的疑问。
+
 <!--more-->
 
 ####请求为何会并发
@@ -35,18 +36,18 @@ tags: [uwsgi, fork, web.py, python, pypy, nginx]
 > Most of its choices (starting from “There’s more than one way to do
 > it”) came from the Perl world (and more generally from classical UNIX
 > sysadmin approaches).
-> 
+>
 > 有时候其他语言/平台上使用这些方法会导致不在意料中的行为发生。
-> 
+>
 > 当你开始学习 uWSGI 的时候一个你可能会面对的”问题”之一就是它的 fork() 使用。
-> 
+>
 > 默认情况下 uWSGI 在第一个 spawned 的进程里加载你的应用，然后在这个进程里面调用 fork() 多次。
-> 
+>
 > 这意味这你的应用被单独加载一次然后被复制。
-> 
+>
 > 虽然这个方法加速了服务器的启动，但有些应用可能会因为这个技术造成一些问题(特别是这些在启动的
 > 时候初始化数据库连接的，因为连接的文件描述符会在字进程中继承)。
-> 
+>
 > 如果你确定应不应该使用 uWSGI 野蛮的预-fork方式，那就使用 --lazy-apps 选项禁用掉它。 它将会强制你的应用在每个
 > worker 里都会完整加载一次。
 
