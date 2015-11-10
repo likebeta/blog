@@ -19,6 +19,7 @@ Mac或者Linux下直接用`dd`向sd卡写入镜像， Windows下可以借助`Win
 如果特殊修改网络的情况下， 第一次启动后应该已经连上网了， 此时是DHCP获取到的动态ip， 下面来给它配置个静态ip。
 
 `vim /etc/network/interfaces`， 按照自己的网络修改， 大致如下：
+
 ```
 auto lo
 iface lo inet loopback
@@ -36,6 +37,7 @@ netmask 255.255.255.0
 network 192.168.2.0
 broadcast 192.168.2.255
 ```
+
 `/etc/init.d/networking restart`重启网络， 现在树莓派已经是固定IP了， 最好在路由器上绑定下避免ip冲突。
 
 ####无线网络
@@ -43,6 +45,7 @@ broadcast 192.168.2.255
 可以通过安装个usb无线网卡来让树莓派支持无线网，不用局限于网线的束缚，这样更加便携， 通过配置可以让树莓派在多个无线wifi中切换。假设有两个无线wifi，一个是公司一个是家里。
 
 `/etc/network/interfaces`中添加如下配置：
+
 ```
 auto wlan0
 allow-hotplug wlan0
@@ -61,7 +64,9 @@ address 192.168.0.108
 gateway 192.168.0.1
 netmask 255.255.255.0
 ```
+
 修改`/etc/wpa_supplicant/wpa_supplicant.conf`如下所示：
+
 ```
 ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
 update_config=1
@@ -80,6 +85,7 @@ network={
     id_str="home"
 }
 ```
+
 重启网络后，树莓派应该可以使用无线网了，但目前还是有个问题，虽然wpa_supplicant声称可以自动重连， 我的实验结果是拔掉再插可以，但是有时候如果无线wifi出现问题， 树莓派并不会自动重连上。
 
 ####守护脚本
