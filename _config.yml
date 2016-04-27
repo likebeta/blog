@@ -1,4 +1,4 @@
-markdown: redcarpet
+markdown: kramdown
 permalink: /:title.html
 url: http://blog.ixxoo.me
 lsi: true
