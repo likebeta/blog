@@ -8,7 +8,7 @@ tags: [python,linux,ubuntu,dropbox]
 
 <!--more-->
 
-####安装
+#### 安装
 
 脚本依赖`oauth2`, ubuntu 下可以 `sudo apt-get install python-oauth2` 安装。
 
@@ -18,7 +18,7 @@ cd ubuntuone_uploader
 chmod +x ubuntuone_uploader.py
 ```
 
-####帮助
+#### 帮助
 
 使用`-h`查看命令参数：
 

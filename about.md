@@ -46,7 +46,7 @@ Linux, C/C++, PHP, Javascript, Lua, Python, Redis
 
 
 <div id="avater" class="avater" style="margin-top: 20px;">
-	<pre>
+    <pre>
                                                  .   .
                                             .:@3@@@@X@@A.#3,A@M5r
                                         i@M@@@@@@@@@@@@@@@@@@@@@@@@
@@ -110,7 +110,7 @@ Linux, C/C++, PHP, Javascript, Lua, Python, Redis
                                           5@@H@@,    .:,,::::,  #@B#@#3
                                          ,@@#HM@@2:.   ,,....,s@@HA#@ @;
                                          X.r#AAAAMHh2isiiii53AMHAAA#2,:9
-	</pre>
+    </pre>
 </div>
 
 <div class="clear"></div>
