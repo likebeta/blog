@@ -2,9 +2,10 @@ markdown: redcarpet
 permalink: /:title.html
 url: http://blog.ixxoo.me
 lsi: true
-pygments: true
+#pygments: true
+highlighter: true
 safe: true
-auto: true
+#auto: true
 
 # presonal config
 title: likebeta's Blog
