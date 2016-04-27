@@ -2,10 +2,8 @@ markdown: kramdown
 permalink: /:title.html
 url: http://blog.ixxoo.me
 lsi: true
-#pygments: true
-highlighter: true
+rouge: true
 safe: true
-#auto: true
 
 # presonal config
 title: likebeta's Blog
