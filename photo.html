@@ -20,7 +20,7 @@ photo: true
 
 <script type="text/javascript" charset="utf-8">
 	$(document).ready(function() {
-		$.getJSON('https://api.instagram.com/v1/users/717790068/media/recent?client_id=e3ab8b93bd294dcb8338c38e1e7f627c&count=100&callback=?',
+		$.getJSON('https://api.instagram.com/v1/users/717790068/media/recent/?access_token=717790068.e3ab8b9.654806570f1f469d9f9236cd64cb6197',
 		function(data) {
 			if (data.meta.code != 200) return;
 			var strHtml = '<ul>';
