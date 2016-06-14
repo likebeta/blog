@@ -12,11 +12,11 @@ tags: [TexturePacker, TextureUnPacker]
 
 有一个貌似挺厉害的, 支持没有plist的情况下分割出小图, 不过已经收费了, 还是自己动手吧.
 
-TexturePacker打包的plist其实挺简单的, 就几个属性, 顾名思义大部分都能猜到含义, 主要就是spriteOffset没整明白, 开始搞错以为是左上角的偏移点, 最后搜了一篇介绍老格式文章-[cocos2dx plist中各个属性含义](1), 弄明白了原来是中心的偏移量.
+TexturePacker打包的plist其实挺简单的, 就几个属性, 顾名思义大部分都能猜到含义, 主要就是spriteOffset没整明白, 开始搞错以为是左上角的偏移点, 最后搜了一篇介绍老格式文章-[cocos2dx plist中各个属性含义][1], 弄明白了原来是中心的偏移量.
 
 Python借助PIL的Image实现起来很简单, 稍作处理就可以, 处理textureRotated的时候遇到点问题, 很好解决. 基本上实现了我要的功能, 没有对老格式和plist以外的格式支持, 后面有需求再加上.
 
-源码和示例在这里: [TextureUnPacker](2)
+源码和示例在这里: [TextureUnPacker][2]
 
 
 [1]: http://blog.csdn.net/ranky2009/article/details/19566479
