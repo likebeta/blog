@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 在Cocos2d-x V3中使用帧动画
+title: 在Cocos2d-x v3中使用帧动画
 tags: [TexturePacker, Cocos2d]
 ---
 
