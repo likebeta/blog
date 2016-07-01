@@ -1,6 +1,6 @@
 ---
 layout: post
-title: [译]在Cocos2d-x V3中使用帧动画
+title: 在Cocos2d-x V3中使用帧动画
 tags: [TexturePacker, Cocos2d]
 ---
 
@@ -140,11 +140,11 @@ TexturePacker可以快速创建各种缩放版本的sprite sheets。
 
 ![black-bars.png](https://cdn.codeandweb.com/blog/2015/12/15/animations-and-spritesheets-in-cocos2d-x/black-bars.png)
 
-使用黑边， 分数显示在外面
+<p style="text-align:center">使用黑边， 分数显示在外面</p>
 
 ![extended-scene.png](https://cdn.codeandweb.com/blog/2015/12/15/animations-and-spritesheets-in-cocos2d-x/extended-scene.png)
 
-缩放场景
+<p style="text-align:center">缩放场景</p>
 
 第一种方法可能是最好的，但是会增加大量的工作， 并且会影响到游戏展现，带来更大的挑战。
 
@@ -610,4 +610,4 @@ sprite->runAction(RepeatForever::create(sequence));
 
 ![gamescene-animated.png](https://cdn.codeandweb.com/blog/2015/12/15/animations-and-spritesheets-in-cocos2d-x/gamescene-animated.png)
 
-原文： [Tutorial: Using sprite sheet animations in cocos2d-x V3]https://www.codeandweb.com/blog/2015/12/15/animations-and-spritesheets-in-cocos2d-x)
+原文： [Tutorial: Using sprite sheet animations in cocos2d-x V3](https://www.codeandweb.com/blog/2015/12/15/animations-and-spritesheets-in-cocos2d-x)
