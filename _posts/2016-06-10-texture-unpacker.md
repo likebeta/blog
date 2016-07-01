@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 分割还原TexturePacker打包的小图
-tags: [TexturePacker, TextureUnPacker]
+tags: [TexturePacker, TextureUnPacker, Cocos2d]
 ---
 
 最近练手cocos2d-js, 苦于没有美术素材, 东拼西凑想弄个基本的界面, 网上扒了一些图片, 大部分都是只要其中的一个小图, 所以想着有没有简单的将TexturePacker打包的大图片切割还原成小图片, 然后自己打包需要的一部分小图.
