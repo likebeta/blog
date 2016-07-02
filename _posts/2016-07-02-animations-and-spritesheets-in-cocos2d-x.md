@@ -44,11 +44,14 @@ cocos new -l cpp -d ~/cocos2d-x-games Cocos2dx-SpriteSheetTutorial
 ```
 
 > **注意**：如果出现这个错误：`ValueError: unknown local: UTF-8`
-> 设置下locale变量：
->```
+>
+> 设置下locale变量:
+>
+> ```
 > export LC_ALL=en_US.UTF-8
 > export LANG=en_US.UTF-8
->```
+> ```
+>
 > 然后重新运行创建的命令。
 
 该命令会新建一个`cocos2d-x`工程，位于`~/cocos2d-x-games`下的子目录`Cocos2dx-SpriteSheetTutorial`中。
