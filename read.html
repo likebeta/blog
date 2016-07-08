@@ -5,20 +5,20 @@ read: true
 ---
 
 <article>
-	<div id="archives">
-		<div id="douban">
+    <div id="archives">
+        <div id="douban">
 <!--
-			<div id="bookreading" class="douban-list"></div>
-			<div id="bookread" class="douban-list"></div>
-			<div id="bookwish" class="douban-list"></div>
+            <div id="bookreading" class="douban-list"></div>
+            <div id="bookread" class="douban-list"></div>
+            <div id="bookwish" class="douban-list"></div>
 -->
-		</div>
-	</div>
+        </div>
+    </div>
 </article>
-<script type="text/javascript" src="{{site.url}}/media/js/douban.api.js"></script>
+<script type="text/javascript" src="/media/js/douban.api.js"></script>
 <script type="text/javascript">
-	var dbapi = new DoubanApi();
-	$(document).ready(function(){
-		dbapi.show();
-	});
+    var dbapi = new DoubanApi();
+    $(document).ready(function(){
+        dbapi.show();
+    });
 </script>

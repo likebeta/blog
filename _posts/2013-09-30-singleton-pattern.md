@@ -28,11 +28,11 @@ Singleton 模式解决问题十分常见，我们怎样去创建一个唯一的�
 class CSingleton
 { 
 public: 
-	static CSingleton* Instance(); 
+    static CSingleton* Instance();
 protected: 
-	CSingleton(); 
+    CSingleton();
 private: 
-	static CSingleton* _instance; 
+    static CSingleton* _instance;
 }; 
 
 #endif
@@ -46,15 +46,15 @@ private:
 CSingleton* CSingleton::_instance = NULL; 
 CSingleton::CSingleton() 
 { 
-	std::cout << "Singleton....\n"; 
+    std::cout << "Singleton....\n";
 } 
 CSingleton* CSingleton::Instance()
 { 
-	if (_instance == NULL) 
-	{ 
-		_instance = new CSingleton(); 
-	} 
-	return _instance; 
+    if (_instance == NULL)
+    {
+        _instance = new CSingleton();
+    }
+    return _instance;
 }
 ```
 
@@ -64,8 +64,8 @@ CSingleton* CSingleton::Instance()
 
 int main()
 {
-	CSingleton* pSingleton = CSingleton::Instance(); 
-	return 0;
+    CSingleton* pSingleton = CSingleton::Instance();
+    return 0;
 }
 ```
 

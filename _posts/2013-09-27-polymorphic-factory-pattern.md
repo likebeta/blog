@@ -32,9 +32,9 @@ Factory模式也带来至少以下两个问题：
 class IPhone
 {
 public:
-	IPhone(){};
-	virtual ~IPhone(){};
-	virtual void showName() = 0;
+    IPhone(){};
+    virtual ~IPhone(){};
+    virtual void showName() = 0;
 };
 
 #endif
@@ -49,41 +49,41 @@ public:
 class CMX1Phone:public IPhone
 {
 public:
-	CMX1Phone();
-	virtual ~CMX1Phone();
-	virtual void showName();
+    CMX1Phone();
+    virtual ~CMX1Phone();
+    virtual void showName();
 };
 
 class CMX2Phone:public IPhone
 {
 public:
-	CMX2Phone();
-	virtual ~CMX2Phone();
-	virtual void showName();
+    CMX2Phone();
+    virtual ~CMX2Phone();
+    virtual void showName();
 };
 
 class CMX3Phone:public IPhone
 {
 public:
-	CMX3Phone();
-	virtual ~CMX3Phone();
-	virtual void showName();
+    CMX3Phone();
+    virtual ~CMX3Phone();
+    virtual void showName();
 };
 
 class CMI1Phone:public IPhone
 {
 public:
-	CMI1Phone();
-	virtual ~CMI1Phone();
-	virtual void showName();
+    CMI1Phone();
+    virtual ~CMI1Phone();
+    virtual void showName();
 };
 
 class CMI2Phone:public IPhone
 {
 public:
-	CMI2Phone();
-	virtual ~CMI2Phone();
-	virtual void showName();
+    CMI2Phone();
+    virtual ~CMI2Phone();
+    virtual void showName();
 };
 
 #endif
@@ -104,7 +104,7 @@ CMX1Phone::~CMX1Phone()
 
 void CMX1Phone::showName()
 {
-	std::cout << "I am mx1 of meizu!\n";
+    std::cout << "I am mx1 of meizu!\n";
 }
 
 CMX2Phone::CMX2Phone()
@@ -117,7 +117,7 @@ CMX2Phone::~CMX2Phone()
 
 void CMX2Phone::showName()
 {
-	std::cout << "I am mx2 of meizu!\n";
+    std::cout << "I am mx2 of meizu!\n";
 }
 
 CMX3Phone::CMX3Phone()
@@ -130,7 +130,7 @@ CMX3Phone::~CMX3Phone()
 
 void CMX3Phone::showName()
 {
-	std::cout << "I am mx3 of meizu!\n";
+    std::cout << "I am mx3 of meizu!\n";
 }
 
 CMI1Phone::CMI1Phone()
@@ -143,7 +143,7 @@ CMI1Phone::~CMI1Phone()
 
 void CMI1Phone::showName()
 {
-	std::cout << "I am mi1 of xiaomi!\n";
+    std::cout << "I am mi1 of xiaomi!\n";
 }
 
 CMI2Phone::CMI2Phone()
@@ -156,7 +156,7 @@ CMI2Phone::~CMI2Phone()
 
 void CMI2Phone::showName()
 {
-	std::cout << "I am mi2 of xiaomi!\n";
+    std::cout << "I am mi2 of xiaomi!\n";
 }
 ```
 
@@ -170,9 +170,9 @@ void CMI2Phone::showName()
 class IFactory
 {
 public:
-	IFactory(){};
-	virtual ~IFactory(){};
-	virtual IPhone* createPhone(std::string strName) = 0;
+    IFactory(){};
+    virtual ~IFactory(){};
+    virtual IPhone* createPhone(std::string strName) = 0;
 };
 
 #endif
@@ -189,17 +189,17 @@ public:
 class CMXFactory:public IFactory
 {
 public:
-	CMXFactory();
-	virtual ~CMXFactory();
-	virtual IPhone* createPhone(std::string strName);
+    CMXFactory();
+    virtual ~CMXFactory();
+    virtual IPhone* createPhone(std::string strName);
 };
 
 class CMIFactory:public IFactory
 {
 public:
-	CMIFactory();
-	virtual ~CMIFactory();
-	virtual IPhone* createPhone(std::string strName);
+    CMIFactory();
+    virtual ~CMIFactory();
+    virtual IPhone* createPhone(std::string strName);
 };
 
 #endif
@@ -220,26 +220,26 @@ CMXFactory::~CMXFactory()
 
 IPhone* CMXFactory::createPhone(std::string strName)
 {
-	IPhone* pPhone = NULL;
-	if (strName == "mx1")
-	{
-		pPhone = new CMX1Phone();
-	}
-	else if (strName == "mx2")
-	{
-		pPhone = new CMX2Phone();
-	}
-	else if (strName == "mx3")
-	{
-		pPhone = new CMX3Phone();
-	}
+    IPhone* pPhone = NULL;
+    if (strName == "mx1")
+    {
+        pPhone = new CMX1Phone();
+    }
+    else if (strName == "mx2")
+    {
+        pPhone = new CMX2Phone();
+    }
+    else if (strName == "mx3")
+    {
+        pPhone = new CMX3Phone();
+    }
 
-	if (pPhone != NULL)
-	{
-		pPhone->showName();
-	}
+    if (pPhone != NULL)
+    {
+        pPhone->showName();
+    }
 
-	return pPhone;
+    return pPhone;
 }
 
 CMIFactory::CMIFactory()
@@ -252,22 +252,22 @@ CMIFactory::~CMIFactory()
 
 IPhone* CMIFactory::createPhone(std::string strName)
 {
-	IPhone* pPhone = NULL;
-	if (strName == "mi1")
-	{
-		pPhone = new CMI1Phone();
-	}
-	else if (strName == "mi2")
-	{
-		pPhone = new CMI2Phone();
-	}
+    IPhone* pPhone = NULL;
+    if (strName == "mi1")
+    {
+        pPhone = new CMI1Phone();
+    }
+    else if (strName == "mi2")
+    {
+        pPhone = new CMI2Phone();
+    }
 
-	if (pPhone != NULL)
-	{
-		pPhone->showName();
-	}
+    if (pPhone != NULL)
+    {
+        pPhone->showName();
+    }
 
-	return pPhone;
+    return pPhone;
 }
 ```
 
@@ -280,23 +280,23 @@ using namespace std;
 
 int main()
 {
-	std::string strName[2][4] = {"mx1","mx2","mx3","mx4","mi1","mi2","mi3","mi4"};
-	IFactory* pFactory[2] = {new CMXFactory(),new CMIFactory()};
-	for (int n = 0; n < 2; ++n)
-	{
-		for (int i = 0; i < 4; ++i)
-		{
-			IPhone* pPhone = pFactory[n]->createPhone(strName[n][i]);
-			if (pPhone == NULL)
-			{
-				std::cout << "not exist " << strName[n][i] << "!\n";
-			}
-			delete pPhone;
-		}
-		delete pFactory[n];
-		pFactory[n] = NULL;
-	}
-	return 0;
+    std::string strName[2][4] = {"mx1","mx2","mx3","mx4","mi1","mi2","mi3","mi4"};
+    IFactory* pFactory[2] = {new CMXFactory(),new CMIFactory()};
+    for (int n = 0; n < 2; ++n)
+    {
+        for (int i = 0; i < 4; ++i)
+        {
+            IPhone* pPhone = pFactory[n]->createPhone(strName[n][i]);
+            if (pPhone == NULL)
+            {
+                std::cout << "not exist " << strName[n][i] << "!\n";
+            }
+            delete pPhone;
+        }
+        delete pFactory[n];
+        pFactory[n] = NULL;
+    }
+    return 0;
 }
 ```
 

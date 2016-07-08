@@ -48,9 +48,9 @@ c++实现：
 class IPhone
 {
 public:
-	IPhone(){};
-	virtual ~IPhone(){};
-	virtual void showName() = 0;
+    IPhone(){};
+    virtual ~IPhone(){};
+    virtual void showName() = 0;
 };
 
 #endif
@@ -65,25 +65,25 @@ public:
 class CMX1Phone:public IPhone
 {
 public:
-	CMX1Phone();
-	virtual ~CMX1Phone();
-	virtual void showName();
+    CMX1Phone();
+    virtual ~CMX1Phone();
+    virtual void showName();
 };
 
 class CMX2Phone:public IPhone
 {
 public:
-	CMX2Phone();
-	virtual ~CMX2Phone();
-	virtual void showName();
+    CMX2Phone();
+    virtual ~CMX2Phone();
+    virtual void showName();
 };
 
 class CMI1Phone:public IPhone
 {
 public:
-	CMI1Phone();
-	virtual ~CMI1Phone();
-	virtual void showName();
+    CMI1Phone();
+    virtual ~CMI1Phone();
+    virtual void showName();
 };
 
 #endif
@@ -104,7 +104,7 @@ CMX1Phone::~CMX1Phone()
 
 void CMX1Phone::showName()
 {
-	std::cout << "I am mx1 of meizu!\n";
+    std::cout << "I am mx1 of meizu!\n";
 }
 
 CMX2Phone::CMX2Phone()
@@ -117,7 +117,7 @@ CMX2Phone::~CMX2Phone()
 
 void CMX2Phone::showName()
 {
-	std::cout << "I am mx2 of meizu!\n";
+    std::cout << "I am mx2 of meizu!\n";
 }
 
 CMI1Phone::CMI1Phone()
@@ -130,7 +130,7 @@ CMI1Phone::~CMI1Phone()
 
 void CMI1Phone::showName()
 {
-	std::cout << "I am mi1 of xiaomi!\n";
+    std::cout << "I am mi1 of xiaomi!\n";
 }
 ```
 
@@ -145,31 +145,31 @@ void CMI1Phone::showName()
 class CPhoneFactory
 {
 public:
-	static IPhone* createPhone(std::string strName);
+    static IPhone* createPhone(std::string strName);
 };
 
 IPhone* CPhoneFactory::createPhone(std::string strName)
 {
-	IPhone* pPhone = NULL;
-	if (strName == "mx1")
-	{
-		pPhone = new CMX1Phone();
-	}
-	else if (strName == "mx2")
-	{
-		pPhone = new CMX2Phone();
-	}
-	else if (strName == "mi1")
-	{
-		pPhone = new CMI1Phone();
-	}
+    IPhone* pPhone = NULL;
+    if (strName == "mx1")
+    {
+        pPhone = new CMX1Phone();
+    }
+    else if (strName == "mx2")
+    {
+        pPhone = new CMX2Phone();
+    }
+    else if (strName == "mi1")
+    {
+        pPhone = new CMI1Phone();
+    }
 
-	if (pPhone != NULL)
-	{
-		pPhone->showName();
-	}
+    if (pPhone != NULL)
+    {
+        pPhone->showName();
+    }
 
-	return pPhone;
+    return pPhone;
 }
 
 #endif
@@ -184,17 +184,17 @@ using namespace std;
 
 int main()
 {
-	std::string strName[5] = {"mx1","mx2","mx3","mi1","mi2"};
-	for (int i = 0; i < 5; ++i)
-	{
-		IPhone* pPhone = CPhoneFactory::createPhone(strName[i]);
-		if (pPhone == NULL)
-		{
-			std::cout << "not exist " << strName[i] << "!\n";
-		}
-		delete pPhone;
-	}
-	return 0;
+    std::string strName[5] = {"mx1","mx2","mx3","mi1","mi2"};
+    for (int i = 0; i < 5; ++i)
+    {
+        IPhone* pPhone = CPhoneFactory::createPhone(strName[i]);
+        if (pPhone == NULL)
+        {
+            std::cout << "not exist " << strName[i] << "!\n";
+        }
+        delete pPhone;
+    }
+    return 0;
 }
 ```
 

@@ -5,46 +5,46 @@ photo: true
 ---
 
 <article>
-	<div id="archives">
-		<div id="photo" class="photo">
-			<h4>instagram</h4>
-			<div class="instagram">
-				<ul id="instagram"></ul>
-			</div>
-			<div class="clear"></div>
-			<h4>flickr</h4>
-			<div id="flickr" class="flickr"></div>
-		</div>
-	</div>
+    <div id="archives">
+        <div id="photo" class="photo">
+            <h4>instagram</h4>
+            <div class="instagram">
+                <ul id="instagram"></ul>
+            </div>
+            <div class="clear"></div>
+            <h4>flickr</h4>
+            <div id="flickr" class="flickr"></div>
+        </div>
+    </div>
 </article>
 
 <script type="text/javascript" charset="utf-8">
-	$(document).ready(function() {
-		$.getJSON('https://api.instagram.com/v1/users/self/media/recent/?access_token=717790068.e3ab8b9.654806570f1f469d9f9236cd64cb6197&callback=?', function(data) {
-			if (data.meta.code != 200) return;
-			var strHtml = '<ul>';
-			for (var i = 0; i < data.data.length; i++) {
-				var photo = data.data[i];
-				strHtml += '<li><a href="' + photo.link + '" target="_blank">';
-				strHtml += '<img src="' + photo.images.thumbnail.url + '" />';
-				strHtml += '</a></li>';
-			}
-			strHtml += '</ul>';
-			$('#instagram').html(strHtml);
-		});
+    $(document).ready(function () {
+        $.getJSON('https://api.instagram.com/v1/users/self/media/recent/?access_token=717790068.e3ab8b9.654806570f1f469d9f9236cd64cb6197&callback=?', function (data) {
+            if (data.meta.code != 200) return;
+            var strHtml = '<ul>';
+            for (var i = 0; i < data.data.length; i++) {
+                var photo = data.data[i];
+                strHtml += '<li><a href="' + photo.link + '" target="_blank">';
+                strHtml += '<img src="' + photo.images.thumbnail.url + '" />';
+                strHtml += '</a></li>';
+            }
+            strHtml += '</ul>';
+            $('#instagram').html(strHtml);
+        });
 
-		$.getJSON('https://api.flickr.com/services/rest/?method=flickr.people.getPhotos&api_key=8079916309bfb2fb4d93c9684b4709b9&user_id=96149834@N05&format=json&per_page=100&page=1&jsoncallback=?', function(data) {
-			if (data.stat != 'ok') return;
-			if (data.photos.total <= 0) return;
-			var strHtml = '<ul>';
-			for (var i = 0; i < data.photos.total; i++) {
-				var photo = data.photos.photo[i];
-				strHtml += '<li><a href="https://www.flickr.com/photos/likebeta/' + photo.id + '/" target="_blank">';
-				strHtml += '<img src="https://farm' + photo.farm + '.static.flickr.com/' + photo.server + '/' + photo.id + '_' + photo.secret + '_m.jpg" />';
-				strHtml += '</a></li>';
-			}
-			strHtml += '</ul>';
-			$('#flickr').html(strHtml);
-		});
-	})
+        $.getJSON('https://api.flickr.com/services/rest/?method=flickr.people.getPhotos&api_key=8079916309bfb2fb4d93c9684b4709b9&user_id=96149834@N05&format=json&per_page=100&page=1&jsoncallback=?', function (data) {
+            if (data.stat != 'ok') return;
+            if (data.photos.total <= 0) return;
+            var strHtml = '<ul>';
+            for (var i = 0; i < data.photos.total; i++) {
+                var photo = data.photos.photo[i];
+                strHtml += '<li><a href="https://www.flickr.com/photos/likebeta/' + photo.id + '/" target="_blank">';
+                strHtml += '<img src="https://farm' + photo.farm + '.static.flickr.com/' + photo.server + '/' + photo.id + '_' + photo.secret + '_m.jpg" />';
+                strHtml += '</a></li>';
+            }
+            strHtml += '</ul>';
+            $('#flickr').html(strHtml);
+        });
+    })
 </script>

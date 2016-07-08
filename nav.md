@@ -4,7 +4,7 @@ layout: page
 nav: true
 ---
 
-###personal###
+#### personal
 
 - blog: <http://www.ixxoo.me>
 - app: <http://app.ixxoo.me>
@@ -25,4 +25,3 @@ nav: true
 - flickr: <http://www.flickr.com/photos/likebeta>
 - pinterest<http://pinterest.com/likebeta>
 - gravatar: <http://en.gravatar.com/likebeta>
-

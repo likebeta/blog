@@ -6,37 +6,37 @@ site:http://pagecho.com
 css-flie-last-update:2012.5.19
 */
 ::-webkit-scrollbar-track-piece{
-	background-color:#EEE;
-	-webkit-border-radius:0;
+    background-color:#EEE;
+    -webkit-border-radius:0;
 }
 ::-webkit-scrollbar{
-	width:16px;
-	height:8px;
+    width:16px;
+    height:8px;
 }
 ::-webkit-scrollbar-thumb{
-	height:50px;
-	background-color:#DDD;
-	-webkit-border-radius:4px;
-	outline:2px solid #EEE;
-	outline-offset:-2px;
-	border: 2px solid #EEE;
+    height:50px;
+    background-color:#DDD;
+    -webkit-border-radius:4px;
+    outline:2px solid #EEE;
+    outline-offset:-2px;
+    border: 2px solid #EEE;
 }
 ::-webkit-scrollbar-thumb:hover{
-	height:50px;
-	background-color:#40AA52;
-	-webkit-border-radius:4px;
+    height:50px;
+    background-color:#40AA52;
+    -webkit-border-radius:4px;
 }
 img {
 border:0;
 }
 ::selection {
     color: #fff;
-	background-color: #40AA52;
+    background-color: #40AA52;
     text-shadow:none;
 }
 ::-moz-selection {
     color: #fff;
-	background-color: #40AA52;
+    background-color: #40AA52;
     text-shadow:none;
 }
 * {
@@ -1072,70 +1072,70 @@ padding-left:15px;
 
 }
 .post .douban li {
-	list-style:none outside none;
-	float:left;
-	width:80px;
+    list-style:none outside none;
+    float:left;
+    width:80px;
     padding: 0;
 }
 .post .douban li img{
-	width: 70px;
+    width: 70px;
     height: 100px;
 }
 .post .wall {
-	line-height:18px;
-	overflow:hidden;
-	text-align:left;
+    line-height:18px;
+    overflow:hidden;
+    text-align:left;
 }
 .post .wall li {
-	list-style:none outside none;
-	float:left;
-	width:178px;
+    list-style:none outside none;
+    float:left;
+    width:178px;
     padding: 0;
 }
 
 .post .wall li a {
-	border:1px solid #CBCBCB;
-	border-radius:2px 2px 2px 2px;
-	box-shadow:0 0 2px #EEE;
-	color:#999;
-	display:block;
-	height:42px;
-	margin:4px;
-	overflow:hidden;
-	padding:4px 4px 4px 44px;
-	position:relative;
-	text-decoration:none;
+    border:1px solid #CBCBCB;
+    border-radius:2px 2px 2px 2px;
+    box-shadow:0 0 2px #EEE;
+    color:#999;
+    display:block;
+    height:42px;
+    margin:4px;
+    overflow:hidden;
+    padding:4px 4px 4px 44px;
+    position:relative;
+    text-decoration:none;
 }
 .post .wall li a,.post-text .wall li a:hover strong {
-	background-color:#F7F7F7;
-	background-image:0;
+    background-color:#F7F7F7;
+    background-image:0;
 }
 
 .post .wall li a:hover,
 .post .wall li strong:hover {
-	color:#47AFD5;
+    color:#47AFD5;
 }
 .post .wall li a img {
-	border-radius:2px 2px 2px 2px;
-	float:left;
-	height:36px;
-	margin:0 8px 0 -40px;
-	width:36px;
+    border-radius:2px 2px 2px 2px;
+    float:left;
+    height:36px;
+    margin:0 8px 0 -40px;
+    width:36px;
     padding: 2px;
 }
 .post .wall li a em {
-	color:#666;
-	font-style:normal;
-	margin-right:10px;
+    color:#666;
+    font-style:normal;
+    margin-right:10px;
 }
 .post .wall li a strong {
-	color:#DDD;
-	font:bold 14px/16px microsoft yahei;
-	position:absolute;
-	right:6px;
-	text-align:right;
-	top: 5px;
-	width:40px;
+    color:#DDD;
+    font:bold 14px/16px microsoft yahei;
+    position:absolute;
+    right:6px;
+    text-align:right;
+    top: 5px;
+    width:40px;
 }
 .post .wall li a div.active-bg {
     width: 106px;
@@ -1260,107 +1260,107 @@ padding-left:15px;
 }
 
 .download {
-	margin:10px 0px;
-	padding:15px 15px 15px 70px;
-	font-size:12px;
-	-moz-box-shadow:0px 1px 2px rgba(0, 0, 0, 0.1);
-	-webkit-box-shadow:0px 1px 2px rgba(0, 0, 0, 0.1);
-	box-shadow:0px 1px 2px rgba(0, 0, 0, 0.1);
-	border-radius:5px;
-	-webkit-border-radius:5px;
-	-moz-border-radius:5px;
-	-khtml-border-radius:5px;
-	/*background:url(images/download.png) no-repeat 20px 50% #EFEFEF;*/
-	border:1px solid #ddd;
-	color:#999;
+    margin:10px 0px;
+    padding:15px 15px 15px 70px;
+    font-size:12px;
+    -moz-box-shadow:0px 1px 2px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow:0px 1px 2px rgba(0, 0, 0, 0.1);
+    box-shadow:0px 1px 2px rgba(0, 0, 0, 0.1);
+    border-radius:5px;
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    -khtml-border-radius:5px;
+    /*background:url(images/download.png) no-repeat 20px 50% #EFEFEF;*/
+    border:1px solid #ddd;
+    color:#999;
 }
 .download a {
-	color:#CC4F27 !important;
+    color:#CC4F27 !important;
 }
 .download a:hover {
 }
 .download b,{
-	padding:0px;
-	margin:0px;
-	background:none;
-	font-weight:bold;
-	border-radius:0px;
-	-moz-border-radius:0px;
+    padding:0px;
+    margin:0px;
+    background:none;
+    font-weight:bold;
+    border-radius:0px;
+    -moz-border-radius:0px;
 }
 #clickload {
-	display: none;
-	background: #40AA52;
-	color: #FFF;
-	text-align: center;
-	overflow: hidden;
-	position: fixed;
-	table-layout: fixed;
-	word-break: break-all;
-	left: 50%;
-	margin-left: -115px;
-	padding: 5px;
-	width: 220px;
-	top: 0;
-	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
-	zoom: 1;
-	z-index: 999;
+    display: none;
+    background: #40AA52;
+    color: #FFF;
+    text-align: center;
+    overflow: hidden;
+    position: fixed;
+    table-layout: fixed;
+    word-break: break-all;
+    left: 50%;
+    margin-left: -115px;
+    padding: 5px;
+    width: 220px;
+    top: 0;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+    zoom: 1;
+    z-index: 999;
 }
 .mod_lost_child {
-	width: auto;
+    width: auto;
 }
 
 .fir ul li a {
-	color: #40aa52;
-	padding-left: 1em;
+    color: #40aa52;
+    padding-left: 1em;
 }
 
 .douban-list ul li {
-	width: 80px;
-	float: left;
-	list-style: none outside none;
+    width: 80px;
+    float: left;
+    list-style: none outside none;
 }
 
 .douban-list ul li img {
-	width: 70px;
-	height: 100px;
-	border: solid 1px #DDD;
+    width: 70px;
+    height: 100px;
+    border: solid 1px #DDD;
 }
 
 .flickr,.instagram {
-	margin-top: 5px;
+    margin-top: 5px;
 }
 
 .flickr ul li {
-	width: 276px;
-	float: left;
-	list-style: none outside none;
+    width: 276px;
+    float: left;
+    list-style: none outside none;
 }
 
 .flickr ul li img {
-	width: 256px;
-/*	height: 100px;*/
-	border: solid 1px #DDD;
+    width: 256px;
+/*    height: 100px;*/
+    border: solid 1px #DDD;
 }
 
 .instagram ul li {
-	float: left;
-	list-style: none outside none;
+    float: left;
+    list-style: none outside none;
 }
 
 .instagram ul li img {
-	border: solid 1px #DDD;
+    border: solid 1px #DDD;
 }
 
 .avater {
-	width: 760px;
-	margin: auto;
+    width: 760px;
+    margin: auto;
 }
 
 .avater pre {
-	font-family: "Lucida Console", monospace;
-	font-size: 9pt;
-	margin: auto 10px;
-	color: #40AA52;
-	float: left;
-	line-height: 12px;
+    font-family: "Lucida Console", monospace;
+    font-size: 9pt;
+    margin: auto 10px;
+    color: #40AA52;
+    float: left;
+    line-height: 12px;
 }

@@ -27,9 +27,9 @@ Abstract Factory 模式关键就是将这一组对象的创建封装到一个用
 class IPhone
 {
 public:
-	IPhone(){};
-	virtual ~IPhone(){};
-	virtual void showName() = 0;
+    IPhone(){};
+    virtual ~IPhone(){};
+    virtual void showName() = 0;
 };
 
 #endif
@@ -44,41 +44,41 @@ public:
 class CMX1Phone:public IPhone
 {
 public:
-	CMX1Phone();
-	virtual ~CMX1Phone();
-	virtual void showName();
+    CMX1Phone();
+    virtual ~CMX1Phone();
+    virtual void showName();
 };
 
 class CMX2Phone:public IPhone
 {
 public:
-	CMX2Phone();
-	virtual ~CMX2Phone();
-	virtual void showName();
+    CMX2Phone();
+    virtual ~CMX2Phone();
+    virtual void showName();
 };
 
 class CMX3Phone:public IPhone
 {
 public:
-	CMX3Phone();
-	virtual ~CMX3Phone();
-	virtual void showName();
+    CMX3Phone();
+    virtual ~CMX3Phone();
+    virtual void showName();
 };
 
 class CMI1Phone:public IPhone
 {
 public:
-	CMI1Phone();
-	virtual ~CMI1Phone();
-	virtual void showName();
+    CMI1Phone();
+    virtual ~CMI1Phone();
+    virtual void showName();
 };
 
 class CMI2Phone:public IPhone
 {
 public:
-	CMI2Phone();
-	virtual ~CMI2Phone();
-	virtual void showName();
+    CMI2Phone();
+    virtual ~CMI2Phone();
+    virtual void showName();
 };
 
 #endif
@@ -99,7 +99,7 @@ CMX1Phone::~CMX1Phone()
 
 void CMX1Phone::showName()
 {
-	std::cout << "I am mx1 of meizu!\n";
+    std::cout << "I am mx1 of meizu!\n";
 }
 
 CMX2Phone::CMX2Phone()
@@ -112,7 +112,7 @@ CMX2Phone::~CMX2Phone()
 
 void CMX2Phone::showName()
 {
-	std::cout << "I am mx2 of meizu!\n";
+    std::cout << "I am mx2 of meizu!\n";
 }
 
 CMX3Phone::CMX3Phone()
@@ -125,7 +125,7 @@ CMX3Phone::~CMX3Phone()
 
 void CMX3Phone::showName()
 {
-	std::cout << "I am mx3 of meizu!\n";
+    std::cout << "I am mx3 of meizu!\n";
 }
 
 CMI1Phone::CMI1Phone()
@@ -138,7 +138,7 @@ CMI1Phone::~CMI1Phone()
 
 void CMI1Phone::showName()
 {
-	std::cout << "I am mi1 of xiaomi!\n";
+    std::cout << "I am mi1 of xiaomi!\n";
 }
 
 CMI2Phone::CMI2Phone()
@@ -151,7 +151,7 @@ CMI2Phone::~CMI2Phone()
 
 void CMI2Phone::showName()
 {
-	std::cout << "I am mi2 of xiaomi!\n";
+    std::cout << "I am mi2 of xiaomi!\n";
 }
 ```
 
@@ -163,9 +163,9 @@ void CMI2Phone::showName()
 class IBattery
 {
 public:
-	IBattery(){};
-	virtual ~IBattery(){};
-	virtual void showName() = 0;
+    IBattery(){};
+    virtual ~IBattery(){};
+    virtual void showName() = 0;
 };
 
 #endif
@@ -180,41 +180,41 @@ public:
 class CMX1Battery:public IBattery
 {
 public:
-	CMX1Battery();
-	virtual ~CMX1Battery();
-	virtual void showName();
+    CMX1Battery();
+    virtual ~CMX1Battery();
+    virtual void showName();
 };
 
 class CMX2Battery:public IBattery
 {
 public:
-	CMX2Battery();
-	virtual ~CMX2Battery();
-	virtual void showName();
+    CMX2Battery();
+    virtual ~CMX2Battery();
+    virtual void showName();
 };
 
 class CMX3Battery:public IBattery
 {
 public:
-	CMX3Battery();
-	virtual ~CMX3Battery();
-	virtual void showName();
+    CMX3Battery();
+    virtual ~CMX3Battery();
+    virtual void showName();
 };
 
 class CMI1Battery:public IBattery
 {
 public:
-	CMI1Battery();
-	virtual ~CMI1Battery();
-	virtual void showName();
+    CMI1Battery();
+    virtual ~CMI1Battery();
+    virtual void showName();
 };
 
 class CMI2Battery:public IBattery
 {
 public:
-	CMI2Battery();
-	virtual ~CMI2Battery();
-	virtual void showName();
+    CMI2Battery();
+    virtual ~CMI2Battery();
+    virtual void showName();
 };
 
 #endif
@@ -235,7 +235,7 @@ CMX1Battery::~CMX1Battery()
 
 void CMX1Battery::showName()
 {
-	std::cout << "I am mx1's battery of meizu!\n";
+    std::cout << "I am mx1's battery of meizu!\n";
 }
 
 CMX2Battery::CMX2Battery()
@@ -248,7 +248,7 @@ CMX2Battery::~CMX2Battery()
 
 void CMX2Battery::showName()
 {
-	std::cout << "I am mx2's battery of meizu!\n";
+    std::cout << "I am mx2's battery of meizu!\n";
 }
 
 CMX3Battery::CMX3Battery()
@@ -261,7 +261,7 @@ CMX3Battery::~CMX3Battery()
 
 void CMX3Battery::showName()
 {
-	std::cout << "I am mx3's battery of meizu!\n";
+    std::cout << "I am mx3's battery of meizu!\n";
 }
 
 CMI1Battery::CMI1Battery()
@@ -274,7 +274,7 @@ CMI1Battery::~CMI1Battery()
 
 void CMI1Battery::showName()
 {
-	std::cout << "I am mi1's battery of xiaomi!\n";
+    std::cout << "I am mi1's battery of xiaomi!\n";
 }
 
 CMI2Battery::CMI2Battery()
@@ -287,7 +287,7 @@ CMI2Battery::~CMI2Battery()
 
 void CMI2Battery::showName()
 {
-	std::cout << "I am mi2's battery of xiaomi!\n";
+    std::cout << "I am mi2's battery of xiaomi!\n";
 }
 ```
 
@@ -302,10 +302,10 @@ void CMI2Battery::showName()
 class IFactory
 {
 public:
-	IFactory(){};
-	virtual ~IFactory(){};
-	virtual IPhone* createPhone(std::string strName) = 0;
-	virtual IBattery* createBattery(std::string strName) = 0;
+    IFactory(){};
+    virtual ~IFactory(){};
+    virtual IPhone* createPhone(std::string strName) = 0;
+    virtual IBattery* createBattery(std::string strName) = 0;
 };
 
 #endif
@@ -322,19 +322,19 @@ public:
 class CMXFactory:public IFactory
 {
 public:
-	CMXFactory();
-	virtual ~CMXFactory();
-	virtual IPhone* createPhone(std::string strName);
-	virtual IBattery* createBattery(std::string strName);
+    CMXFactory();
+    virtual ~CMXFactory();
+    virtual IPhone* createPhone(std::string strName);
+    virtual IBattery* createBattery(std::string strName);
 };
 
 class CMIFactory:public IFactory
 {
 public:
-	CMIFactory();
-	virtual ~CMIFactory();
-	virtual IPhone* createPhone(std::string strName);
-	virtual IBattery* createBattery(std::string strName);
+    CMIFactory();
+    virtual ~CMIFactory();
+    virtual IPhone* createPhone(std::string strName);
+    virtual IBattery* createBattery(std::string strName);
 };
 
 #endif
@@ -356,50 +356,50 @@ CMXFactory::~CMXFactory()
 
 IPhone* CMXFactory::createPhone(std::string strName)
 {
-	IPhone* pPhone = NULL;
-	if (strName == "mx1")
-	{
-		pPhone = new CMX1Phone();
-	}
-	else if (strName == "mx2")
-	{
-		pPhone = new CMX2Phone();
-	}
-	else if (strName == "mx3")
-	{
-		pPhone = new CMX3Phone();
-	}
+    IPhone* pPhone = NULL;
+    if (strName == "mx1")
+    {
+        pPhone = new CMX1Phone();
+    }
+    else if (strName == "mx2")
+    {
+        pPhone = new CMX2Phone();
+    }
+    else if (strName == "mx3")
+    {
+        pPhone = new CMX3Phone();
+    }
 
-	if (pPhone != NULL)
-	{
-		pPhone->showName();
-	}
+    if (pPhone != NULL)
+    {
+        pPhone->showName();
+    }
 
-	return pPhone;
+    return pPhone;
 }
 
 IBattery* CMXFactory::createBattery(std::string strName)
 {
-	IBattery* pBattery = NULL;
-	if (strName == "mx1")
-	{
-		pBattery = new CMX1Battery();
-	}
-	else if (strName == "mx2")
-	{
-		pBattery = new CMX2Battery();
-	}
-	else if (strName == "mx3")
-	{
-		pBattery = new CMX3Battery();
-	}
+    IBattery* pBattery = NULL;
+    if (strName == "mx1")
+    {
+        pBattery = new CMX1Battery();
+    }
+    else if (strName == "mx2")
+    {
+        pBattery = new CMX2Battery();
+    }
+    else if (strName == "mx3")
+    {
+        pBattery = new CMX3Battery();
+    }
 
-	if (pBattery != NULL)
-	{
-		pBattery->showName();
-	}
+    if (pBattery != NULL)
+    {
+        pBattery->showName();
+    }
 
-	return pBattery;
+    return pBattery;
 }
 
 CMIFactory::CMIFactory()
@@ -412,42 +412,42 @@ CMIFactory::~CMIFactory()
 
 IPhone* CMIFactory::createPhone(std::string strName)
 {
-	IPhone* pPhone = NULL;
-	if (strName == "mi1")
-	{
-		pPhone = new CMI1Phone();
-	}
-	else if (strName == "mi2")
-	{
-		pPhone = new CMI2Phone();
-	}
+    IPhone* pPhone = NULL;
+    if (strName == "mi1")
+    {
+        pPhone = new CMI1Phone();
+    }
+    else if (strName == "mi2")
+    {
+        pPhone = new CMI2Phone();
+    }
 
-	if (pPhone != NULL)
-	{
-		pPhone->showName();
-	}
+    if (pPhone != NULL)
+    {
+        pPhone->showName();
+    }
 
-	return pPhone;
+    return pPhone;
 }
 
 IBattery* CMIFactory::createBattery(std::string strName)
 {
-	IBattery* pBattery = NULL;
-	if (strName == "mi1")
-	{
-		pBattery = new CMI1Battery();
-	}
-	else if (strName == "mi2")
-	{
-		pBattery = new CMI2Battery();
-	}
+    IBattery* pBattery = NULL;
+    if (strName == "mi1")
+    {
+        pBattery = new CMI1Battery();
+    }
+    else if (strName == "mi2")
+    {
+        pBattery = new CMI2Battery();
+    }
 
-	if (pBattery != NULL)
-	{
-		pBattery->showName();
-	}
+    if (pBattery != NULL)
+    {
+        pBattery->showName();
+    }
 
-	return pBattery;
+    return pBattery;
 }
 ```
 
@@ -460,29 +460,29 @@ using namespace std;
 
 int main()
 {
-	std::string strName[2][4] = {"mx1","mx2","mx3","mx4","mi1","mi2","mi3","mi4"};
-	IFactory* pFactory[2] = {new CMXFactory(),new CMIFactory()};
-	for (int n = 0; n < 2; ++n)
-	{
-		for (int i = 0; i < 4; ++i)
-		{
-			IPhone* pPhone = pFactory[n]->createPhone(strName[n][i]);
-			if (pPhone == NULL)
-			{
-				std::cout << "not exist phone of " << strName[n][i] << "!\n";
-			}
-			delete pPhone;
+    std::string strName[2][4] = {"mx1","mx2","mx3","mx4","mi1","mi2","mi3","mi4"};
+    IFactory* pFactory[2] = {new CMXFactory(),new CMIFactory()};
+    for (int n = 0; n < 2; ++n)
+    {
+        for (int i = 0; i < 4; ++i)
+        {
+            IPhone* pPhone = pFactory[n]->createPhone(strName[n][i]);
+            if (pPhone == NULL)
+            {
+                std::cout << "not exist phone of " << strName[n][i] << "!\n";
+            }
+            delete pPhone;
 
-			IBattery* pBattery = pFactory[n]->createBattery(strName[n][i]);
-			if (pBattery == NULL)
-			{
-				std::cout << "not exist battery of " << strName[n][i] << "!\n";
-			}
-			delete pBattery;
-		}
-		delete pFactory[n];
-		pFactory[n] = NULL;
-	}
-	return 0;
+            IBattery* pBattery = pFactory[n]->createBattery(strName[n][i]);
+            if (pBattery == NULL)
+            {
+                std::cout << "not exist battery of " << strName[n][i] << "!\n";
+            }
+            delete pBattery;
+        }
+        delete pFactory[n];
+        pFactory[n] = NULL;
+    }
+    return 0;
 }
 ```
