@@ -83,7 +83,7 @@ cocos new -l cpp -d ~/cocos2d-x-games Cocos2dx-SpriteSheetTutorial
 
 来看下面的精灵， 这是个角色走动的动画，下面章节要用到它。精灵图片中的空白区域是为了对其动画相位。
 
-![animationphases.png](https://cdn.codeandweb.com/blog/2015/12/15/animations-and-spritesheets-in-cocos2d-x/animationphases.png)
+![animationphases.png](images/2016/animationphases.png)
 
 透明区域似乎不包含任何有用的信息，但是GPU却不关心这一点。它会逐像素的进行渲染，不管是否可见。如上图透明区域达到了68%。
 
@@ -93,7 +93,7 @@ cocos new -l cpp -d ~/cocos2d-x-games Cocos2dx-SpriteSheetTutorial
 
 好消息是： 当你使用TexturePacker的时候， 不需要关心这些，它会自动为精灵裁剪出cocos2d-x可以读取识别的矩形和多边形区域。
 
-![trim-and-polygon-trim.png](https://cdn.codeandweb.com/blog/2015/12/15/animations-and-spritesheets-in-cocos2d-x/trim-and-polygon-trim.png)
+![trim-and-polygon-trim.png](images/2016/trim-and-polygon-trim.png)
 
 #### 多分辨率设计
 
@@ -106,7 +106,7 @@ cocos2d-x是一个具有高度的可移植性的游戏框架，它已经对不�
 新发布的手机都有很高的分辨率，但是还是有很多老手机存在。下面图标展示了截止到2015底手机和平板的屏幕分辨率统计，有将近69%的设备的分辨率等于或者低于1280 x 720.
 
 
-![device-stats.png](https://cdn.codeandweb.com/blog/2015/12/15/animations-and-spritesheets-in-cocos2d-x/device-stats.png)
+![device-stats.png](images/2016/device-stats.png)
 
 新机和平板都具有很高分辨率甚至全高清的分辨率，但是只占了30%.
 
@@ -141,11 +141,11 @@ TexturePacker可以快速创建各种缩放版本的精灵图表。
 2. 以16:9或者4:3来设计，然后加上黑边
 3. 以16:9来设计，通过缩放来填充适配4:3
 
-![black-bars.png](https://cdn.codeandweb.com/blog/2015/12/15/animations-and-spritesheets-in-cocos2d-x/black-bars.png)
+![black-bars.png](images/2016/black-bars.png)
 
 <p style="text-align:center">使用黑边， 分数显示在外面</p>
 
-![extended-scene.png](https://cdn.codeandweb.com/blog/2015/12/15/animations-and-spritesheets-in-cocos2d-x/extended-scene.png)
+![extended-scene.png](images/2016/extended-scene.png)
 
 <p style="text-align:center">缩放场景</p>
 
@@ -161,23 +161,23 @@ TexturePacker可以快速创建各种缩放版本的精灵图表。
 
 拖拽cityscene文件夹到左侧面板，TexturePacker会添加包含的精灵到表中，并且保持文件的结构。当添加或者删除精灵图片是也会自动更新精灵表。
 
-![texturepacker-add-sprites.png](https://cdn.codeandweb.com/blog/2015/12/15/animations-and-spritesheets-in-cocos2d-x/texturepacker-add-sprites.png)
+![texturepacker-add-sprites.png](images/2016/texturepacker-add-sprites.png)
 
 `Data Format`选择`cocos2d-x`, 不要选择`cocos2d`,`cocos2d`不支持多边形打包。
 
-![texturepacker-select-cocos2d-x.png](https://cdn.codeandweb.com/blog/2015/12/15/animations-and-spritesheets-in-cocos2d-x/texturepacker-select-cocos2d-x.png)
+![texturepacker-select-cocos2d-x.png](images/2016/texturepacker-select-cocos2d-x.png)
 
 开启多边形支持:`Trim mode`选择`polygon`, 你可以通过调节`Tracer tolerance`来控制精灵的多边形顶点数量，越多的顶点就可以越精确的标识非空白区域，减少绘制量， 但是尽量别控制顶点的数量， 以为顶点的计算需要消耗CPU的资源。
 
 因为背景图片是个非透明矩形，所以这个精灵表过度绘制依然达到了95%。
 
-![texturepacker-polygon-sprites.png](https://cdn.codeandweb.com/blog/2015/12/15/animations-and-spritesheets-in-cocos2d-x/texturepacker-polygon-sprites.png)
+![texturepacker-polygon-sprites.png](images/2016/texturepacker-polygon-sprites.png)
 
 为不同的分辨率设备添加缩放比例，右边面板点击`Scaling variants`选择`cocos2d-x HDR/HD/SD`，点击`Apply`，你会看到三个缩放比例:`/HDR/`不缩放，`/HD/`缩放比例 0.5 和`/SD/`缩放比例0.25。如果你不是你想要的， 你可以删除它们，点击`Close`返回精灵表。
 
 你会看到3个tab标签，点击标签可以预览相应缩放比例的精灵表。
 
-![texturepacker-scaling-variants.png](https://cdn.codeandweb.com/blog/2015/12/15/animations-and-spritesheets-in-cocos2d-x/texturepacker-scaling-variants.png)
+![texturepacker-scaling-variants.png](images/2016/texturepacker-scaling-variants.png)
 
 点击`Data file`后面的文件夹图标，将文件命名`cityscene.png`， 并保存在你工程下面的res目录中。你会得到一个错误，提示你需要在文件名中包含一个占位符`{v}`。 将文件名从`.../res/cityscene.plist`改为`.../res/{v}/cityscene.plist`。当保存文件的时候，这里的占位符会被替换成缩放比例的名字。
 
@@ -530,7 +530,7 @@ bool HelloWorld::init()
 
 编译运行， 你会看到如下场景：
 
-![gamescene-just-background.png](https://cdn.codeandweb.com/blog/2015/12/15/animations-and-spritesheets-in-cocos2d-x/gamescene-just-background.png)
+![gamescene-just-background.png](images/2016/gamescene-just-background.png)
 
 #### 播放动画
 
@@ -588,7 +588,7 @@ sprite->runAction(RepeatForever::create(Animate::create(animation)));
 
 编译运行，你会看到一个`Capguy`在原地行走。
 
-![gamescene-capguy.png](https://cdn.codeandweb.com/blog/2015/12/15/animations-and-spritesheets-in-cocos2d-x/gamescene-capguy.png)
+![gamescene-capguy.png](images/2016/gamescene-capguy.png)
 
 #### 让精灵移动起来
 
@@ -611,6 +611,6 @@ sprite->runAction(RepeatForever::create(sequence));
 
 编译运行， 你会看到`Capguy`在街上散步。
 
-![gamescene-animated.png](https://cdn.codeandweb.com/blog/2015/12/15/animations-and-spritesheets-in-cocos2d-x/gamescene-animated.png)
+![gamescene-animated.png](images/2016/gamescene-animated.png)
 
 原文： [Tutorial: Using sprite sheet animations in cocos2d-x V3](https://www.codeandweb.com/blog/2015/12/15/animations-and-spritesheets-in-cocos2d-x)
