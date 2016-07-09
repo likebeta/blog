@@ -1,6 +1,6 @@
 markdown: kramdown
 permalink: /:title.html
-url: http://blog.ixxoo.me
+url: https://blog.ixxoo.me
 lsi: true
 rouge: true
 safe: true
@@ -17,7 +17,7 @@ author:
   gmail: ixxoo.me@gmail.com
   qqmail: http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=GnZzcX94f257WmtrNHl1dw
   qqlist: http://list.qq.com/cgi-bin/qf_invite?id=eff06957927177ae5d491bb3c18e4a3c5fc328c95b6ae04f
-  site: http://www.ixxoo.me
+  site: https://www.ixxoo.me
 
 seo: 
   keyword: 

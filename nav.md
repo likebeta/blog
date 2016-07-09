@@ -6,7 +6,7 @@ nav: true
 
 #### personal
 
-- blog: <http://www.ixxoo.me>
+- blog: <https://www.ixxoo.me>
 - app: <http://app.ixxoo.me>
 - github: <https://github.com/likebeta>
 - stackoverflow: <http://stackoverflow.com/users/1931027/likebeta>
