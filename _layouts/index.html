@@ -18,13 +18,14 @@ void main()
     <meta name="description" content="{{site.seo.description}}" />
     <link rel="shortcut icon" href="/media/img/favicon.ico" />
     <link rel="alternate" title="likebeta" type="application/atom+xml" href="{{site.feed}}" />
+    <link href="//cdn.bootcss.com/nprogress/0.2.0/nprogress.min.css" rel="stylesheet" />
     <link rel="stylesheet" type="text/css" href="/media/css/style.css" />
-    <title>{{site.title}}</title>
     <!--[if lt IE 9]>
     <script src="//cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
     <![endif]-->
     <script src="//cdn.bootcss.com/jquery/1.7.1/jquery.min.js"></script>
-    <script type="text/javascript" src="/media/js/base.js"></script>
+    <script src="//cdn.bootcss.com/nprogress/0.2.0/nprogress.min.js"></script>
+    <title>{{site.title}}</title>
   </head>
   <body>
     <div id="clickload">假装异步加载中...</div>
@@ -33,6 +34,7 @@ void main()
         {% include posts.html %}
         {% include footer.html %}
     </div>
-  <script type="text/javascript" color="255,0,0" opacity="0.3" count="99" src="/media/js/canvas-nest.min.js"></script>
+    <script type="text/javascript" src="/media/js/base.js"></script>
+    <script type="text/javascript" color="255,0,0" opacity="0.3" count="99" src="/media/js/canvas-nest.min.js"></script>
   </body>
 </html>

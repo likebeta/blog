@@ -778,7 +778,7 @@ _display:block;
 .col2,.col1 {
 padding:0;margin:0;
 /*background:url(images/commentbox-bg.png) no-repeat;*/
-} 
+}
 .col1 {
 width:194px;
 float:left;
@@ -1363,4 +1363,8 @@ padding-left:15px;
     color: #40AA52;
     float: left;
     line-height: 12px;
+}
+
+#nprogress .bar {
+    background: #40aa52;
 }
