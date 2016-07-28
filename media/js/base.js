@@ -1,4 +1,4 @@
-//$(document).ready(function($){
+$(document).ready(function($){
 //    /*oneBit = new OneBit('../usr/plugins/BinjooKit/1bit/1bit.swf');
 //    oneBit.ready(function() {
 //        oneBit.specify('color', '#40AA52');
@@ -6,8 +6,8 @@
 //        oneBit.specify('analytics', true);
 //        oneBit.apply('a.mp3');
 //    });*/
-//    //go top
-//    $("a#gotop").click(function(){$("html,body").animate({scrollTop:"0px"},600);return false});
+    //go top
+    $("a#gotop").click(function(){$("html,body").animate({scrollTop:"0px"},600);return false});
 //    //email显示
 //    $(".myemail").click(function(){var d="ixxoo.me";var f="gmail.com";var e=d+"@"+f;$(this).hide();setTimeout(function(){var g=$(".myemail");g.next().hide();g.text(e);g.attr("href","mailto:"+e).unbind("click");g.fadeIn(2000)},1)});
 //    //网盘
@@ -40,7 +40,7 @@
 //                $('#clickload').slideDown(200);
 //            }
 //    });
-//});
+});
 NProgress.configure({ showSpinner: false, minimum: 0.1 });
 NProgress.start();
     $(window).load(function() {
