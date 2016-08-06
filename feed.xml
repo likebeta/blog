@@ -1,23 +1,37 @@
 ---
+layout: null
 ---
-
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>{{ site.title }}</title>
-    <atom:link href="{{ site.url }}/feed.xml" rel="self" type="application/rss+xml" />
-    <link>{{ site.url }}</link>
-    <lastBuildDate>{{ site.time | date_to_xmlschema }}</lastBuildDate>
-    <webMaster>{{ site.author.email }}</webMaster>
-    {% for post in site.posts limit:10 %}
-    <item>
-      <title>{{ post.title | xml_escape }}</title>
-      <link>{{ site.url }}{{ post.url }}</link>
-      <pubDate>{{ post.date | date_to_xmlschema }}</pubDate>
-      <author>{{ site.author.name }}</author>
-      <guid>{{ site.url }}{{ post.id }}</guid>
-      <content:encoded><![CDATA[{{ post.content }}]]></content:encoded>
-    </item>
-    {% endfor %}
-  </channel>
-</rss>
+<feed xmlns="http://www.w3.org/2005/Atom">
+<title type="text">{{ site.title | xml_escape }}</title>
+<updated>{{ site.time | date_to_xmlschema }}</updated>
+<id>{{ site.url }}/</id>
+<link rel="alternate" type="text/html" href="{{ site.url }}{{ site.baseurl }}" />
+<link rel="self" type="application/atom+xml" href="{{ site.url }}{{ site.baseurl }}/feed.xml" />
+<generator uri="https://github.com/mojombo/jekyll">Jekyll</generator>
+<author>
+  <name>{{ site.owner.name }}</name>
+  <uri>{{ site.url }}{{ site.baseur l}}/</uri>
+  <email>{{ site.email }}</email>
+</author>
+
+{% for post in site.posts %}
+<entry>
+  <title type="html"><![CDATA[{{ post.title | cdata_escape }}]]></title>
+  <link>{{ post.url | prepend: site.baseurl | prepend: site.url }}</link>
+  <id>{{ site.url }}{{ post.id }}</id>
+  {% if post.modified %}<updated>{{ post.modified | to_xmlschema }}T00:00:00-00:00</updated>
+  <published>{{ post.date | date_to_xmlschema }}</published>
+  {% else %}<published>{{ post.date | date_to_xmlschema }}</published>
+  <updated>{{ post.date | date_to_xmlschema }}</updated>{% endif %}
+  <author>
+    <name>{{ site.owner.name }}</name>
+    <uri>{{ site.url }}{{ site.baseurl }}</uri>
+    <email>{{ site.email }}</email>
+  </author>
+  <content type="html">{{ post.content | xml_escape }}
+  </content>
+</entry>
+{% endfor %}
+</feed>
+
