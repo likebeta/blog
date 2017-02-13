@@ -6,7 +6,7 @@ about: true
 
 #### 我
 
-男，泛性恋，与80后一起长大的90后，非典型天蝎，间歇性神经病，职业coder，纯北漂，蜗居北京朝阳某处，想法挺多，成就没有，爱好篮球，看书，各种YY，最近在学习[MongoDB 教程](http://www.runoob.com/mongodb/mongodb-tutorial.html)
+男，泛性恋，与80后一起长大的90后，非典型天蝎，间歇性神经病，职业coder，纯北漂，蜗居北京朝阳某处，想法挺多，成就没有，爱好篮球，看书，各种YY，最近在学习[现代操作系统（第3版）](https://book.douban.com/subject/3852290/)
 
 #### 技术
 
