@@ -26,7 +26,7 @@ DoubanApi.prototype.make_list_item = function (items) {
         html += '<li><a href="'
             + item.link + '" target="_blank"><img src="'
             + item.src + '" alt="' + item.title
-            + '" title="' + item.title + '" /></a></li>';
+            + '" title="' + item.title + '" referrerpolicy="never" /></a></li>';
     });
     return html;
 };
