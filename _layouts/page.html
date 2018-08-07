@@ -13,6 +13,7 @@ void main()
 <html>
   <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    {% if page.read %}<meta name="referrer" content="never" />{% endif %}
     <meta name="author" content="{{site.author.name}}" />
     <meta name="keywords" content="{{page.keywords}}" />
     <meta name="description" content="{{page.description}}" />
