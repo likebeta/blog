@@ -1,8 +1,8 @@
-function DoubanApi() {
+function DoubanApi(user, key) {
     this.defaults = {
         place: "douban",
-        user: "kingtouch",
-        api: "0b204112100ace0a2160c33630206a1e",
+        user: user,
+        key: key,
         book: [{ status: "reading", maxnum: 20 }, { status: "read", maxnum: 100 }, { status: "wish", maxnum: 100 }],
         bookreadingtitle: "在读...",
         bookreadtitle: "读过...",
@@ -94,5 +94,5 @@ DoubanApi.prototype.all_url = function (type, status, begin, end) {
             $("#" + type + status + " > ul").append(this.make_list_item(this.parse_json(json)));
         };
     }
-    return this.make_api_url(type, this.defaults.user, this.defaults.api, status, begin, end);
+    return this.make_api_url(type, this.defaults.user, this.defaults.key, status, begin, end);
 };
