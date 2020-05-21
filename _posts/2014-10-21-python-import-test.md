@@ -23,7 +23,7 @@ foo/
 
 #### 测试代码
 
-<script src="https://gist.github.com/likebeta/f2b38faef4b7fb1e9ae0.js"></script>
+[likebeta/test](https://github.com/likebeta/test/tree/master/python/test_import)
 
 #### 运行结果
 
