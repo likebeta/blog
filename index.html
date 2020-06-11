@@ -15,7 +15,7 @@ index: true
      </header>
      <div class="con">
         <p>
-            {{ post.content  | | split:'<!--more-->' | first | strip_html }}
+            {{ post.content  | split:'<!--more-->' | first | strip_html }}
             <a class="more" href="{{ post.url }}">[继续阅读]</a>
         </p>
      </div>

@@ -11,7 +11,7 @@ layout: null
 <generator uri="https://github.com/mojombo/jekyll">Jekyll</generator>
 <author>
   <name>{{ site.owner.name }}</name>
-  <uri>{{ site.url }}{{ site.baseur l}}/</uri>
+  <uri>{{ site.url }}{{ site.baseur }}/</uri>
   <email>{{ site.email }}</email>
 </author>
 
