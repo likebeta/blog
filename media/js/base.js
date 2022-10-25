@@ -9,7 +9,7 @@ $(document).ready(function($){
     //go top
     $("a#gotop").click(function(){$("html,body").animate({scrollTop:"0px"},600);return false});
 //    //email显示
-//    $(".myemail").click(function(){var d="ixxoo.me";var f="gmail.com";var e=d+"@"+f;$(this).hide();setTimeout(function(){var g=$(".myemail");g.next().hide();g.text(e);g.attr("href","mailto:"+e).unbind("click");g.fadeIn(2000)},1)});
+//    $(".myemail").click(function(){var d="9527.eu.org";var f="gmail.com";var e=d+"@"+f;$(this).hide();setTimeout(function(){var g=$(".myemail");g.next().hide();g.text(e);g.attr("href","mailto:"+e).unbind("click");g.fadeIn(2000)},1)});
 //    //网盘
 //    /*$(".disk-left ol li a").click(function() {
 //        //var v = $(this).attr("class");

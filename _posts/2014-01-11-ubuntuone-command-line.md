@@ -66,7 +66,7 @@ optional arguments:
 详细用法说明参看[ubuntuone_uploader][4]，Ubuntu One中的文件共享后可以直链访问(类似早期注册的Dropbox用户的public文件夹)，有需要的可以使用我的推荐链接注册，我可以得到500M空间，邀请链接是[Ubuntu One][5]和[Dropbox][6]。
 
 
-  [1]: http://blog.ixxoo.me/argparse.html
+  [1]: http://blog.9527.eu.org/argparse.html
   [2]: https://one.ubuntu.com/referrals/referee/1698584/
   [3]: https://github.com/likebeta/ubuntuone_uploader
   [4]: https://github.com/likebeta/ubuntuone_uploader

@@ -1,6 +1,6 @@
 markdown: kramdown
 permalink: /:title.html
-url: https://blog.ixxoo.me
+url: https://blog.9527.eu.org
 lsi: true
 rouge: true
 safe: true
@@ -12,9 +12,9 @@ comments: disqus
 
 author:
   name: likebeta
-  email: ixxoo.me@gmail.com
+  email: 9527.eu.org@gmail.com
   qqmail: https://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=GnZzcX94f257WmtrNHl1dw
-  site: https://ixxoo.me
+  site: https://9527.eu.org
 
 seo:
   keyword:
